@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D6350571EC9ADB0009D563E /* DeuxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6350561EC9ADB0009D563E /* DeuxViewController.swift */; };
 		7D63D3891EC997BD00FB5B3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63D3881EC997BD00FB5B3F /* AppDelegate.swift */; };
 		7D63D38B1EC997BD00FB5B3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63D38A1EC997BD00FB5B3F /* ViewController.swift */; };
 		7D63D38E1EC997BD00FB5B3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D63D38C1EC997BD00FB5B3F /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D6350561EC9ADB0009D563E /* DeuxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeuxViewController.swift; path = "../../projet iOS/projet iOS/DeuxViewController.swift"; sourceTree = "<group>"; };
 		7D63D3851EC997BD00FB5B3F /* TextingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D63D3881EC997BD00FB5B3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D63D38A1EC997BD00FB5B3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		7D63D3871EC997BD00FB5B3F /* TextingApp */ = {
 			isa = PBXGroup;
 			children = (
+				7D6350561EC9ADB0009D563E /* DeuxViewController.swift */,
 				7D63D3881EC997BD00FB5B3F /* AppDelegate.swift */,
 				7D63D38A1EC997BD00FB5B3F /* ViewController.swift */,
 				7D63D38C1EC997BD00FB5B3F /* Main.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D6350571EC9ADB0009D563E /* DeuxViewController.swift in Sources */,
 				7D63D38B1EC997BD00FB5B3F /* ViewController.swift in Sources */,
 				7D63D3891EC997BD00FB5B3F /* AppDelegate.swift in Sources */,
 			);
@@ -505,6 +509,7 @@
 				7D63D3AF1EC997BD00FB5B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D63D3B01EC997BD00FB5B3F /* Build configuration list for PBXNativeTarget "TextingAppTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				7D63D3B21EC997BD00FB5B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D63D3B31EC997BD00FB5B3F /* Build configuration list for PBXNativeTarget "TextingAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				7D63D3B51EC997BD00FB5B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

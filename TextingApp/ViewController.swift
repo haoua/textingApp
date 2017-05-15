@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //Variables
+    @IBOutlet weak var textIdentifiant: UITextField!
+    @IBOutlet weak var btnConnexion: UIButton!
+    @IBOutlet weak var btnInscription: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +26,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func AbtnConnection(_ sender: UIButton) {
+        
+    }
 }
 
