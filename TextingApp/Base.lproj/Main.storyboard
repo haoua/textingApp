@@ -75,7 +75,7 @@
         <!--Blog View Controller-->
         <scene sceneID="g88-f5-dpa">
             <objects>
-                <viewController id="XB6-cr-i2P" customClass="BlogViewController" customModule="TextingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Blog" id="XB6-cr-i2P" customClass="BlogViewController" customModule="TextingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OKk-1Y-kQx"/>
                         <viewControllerLayoutGuide type="bottom" id="Bi1-go-x1g"/>
@@ -104,12 +104,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ouc-oD-DFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1409" y="843"/>
+            <point key="canvasLocation" x="-1578" y="842"/>
         </scene>
         <!--Param View Controller-->
         <scene sceneID="pKs-zY-X3E">
             <objects>
-                <viewController storyboardIdentifier="parametre" id="oEF-gT-rYX" customClass="ParamViewController" customModule="TextingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Param" id="oEF-gT-rYX" customClass="ParamViewController" customModule="TextingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wc9-Kq-zu9"/>
                         <viewControllerLayoutGuide type="bottom" id="hiM-Tx-A7S"/>
@@ -133,36 +133,52 @@
             </objects>
             <point key="canvasLocation" x="-1428" y="1535"/>
         </scene>
-        <!--Compte Table View Controller-->
-        <scene sceneID="qVB-DJ-f6v">
+        <!--Compte View Controller-->
+        <scene sceneID="fch-gq-peq">
             <objects>
-                <tableViewController id="hnP-Ug-VAJ" customClass="CompteTableViewController" customModule="TextingApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="0s1-8e-OCH">
+                <viewController id="nNT-ci-H6k" customClass="CompteViewController" customModule="TextingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HLu-Cp-fXj"/>
+                        <viewControllerLayoutGuide type="bottom" id="qWT-yb-DBD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9N3-ks-6VS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="71u-d2-XQe">
+                                <rect key="frame" x="47" y="201" width="281" height="390"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TextCell" textLabel="A45-TT-inp" style="IBUITableViewCellStyleDefault" id="j1m-xp-bgU">
+                                        <rect key="frame" x="0.0" y="28" width="281" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j1m-xp-bgU" id="id5-a0-ymp">
+                                            <rect key="frame" x="0.0" y="0.0" width="281" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="A45-TT-inp">
+                                                    <rect key="frame" x="15" y="0.0" width="251" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" rowHeight="80" id="oBJ-AJ-ahL">
-                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oBJ-AJ-ahL" id="56h-t8-q7Q">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="hnP-Ug-VAJ" id="aYh-44-hGd"/>
-                            <outlet property="delegate" destination="hnP-Ug-VAJ" id="C29-Rm-EG5"/>
-                        </connections>
-                    </tableView>
+                    </view>
                     <connections>
-                        <outlet property="tableView" destination="0s1-8e-OCH" id="4XD-25-eTo"/>
+                        <outlet property="tableView" destination="71u-d2-XQe" id="uDN-bB-e1S"/>
                     </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Vf-Eq-gSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="slb-Ly-OxO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-749.60000000000002" y="842.42878560719646"/>
+            <point key="canvasLocation" x="-840.79999999999995" y="842.42878560719646"/>
         </scene>
         <!--Three View Controller-->
         <scene sceneID="gdG-dT-XAW">
@@ -188,7 +204,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Compte"/>
                                 <connections>
-                                    <segue destination="hnP-Ug-VAJ" kind="presentation" id="eMR-5k-gu4"/>
+                                    <segue destination="nNT-ci-H6k" kind="presentation" id="6MT-4l-phj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nd-MZ-mCC">
@@ -232,7 +248,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XC7-sn-vbW" id="jCW-IH-TDG">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
