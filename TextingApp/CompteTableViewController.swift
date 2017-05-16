@@ -10,7 +10,17 @@ import UIKit
 
 class CompteTableViewController: UITableViewController {
     
-    let section = ["Modification mot de passe", "Supression de compte", "Déconnexion"]
+    let NomTable = ["Modification mot de passe", "Supression de compte", "Déconnexion"]
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +46,7 @@ class CompteTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.section.count
+        return self.NomTable.count
     }
 
     
@@ -45,10 +55,20 @@ class CompteTableViewController: UITableViewController {
 
         // Configure the cell...
 
-        cell.textLabel?.text = self.section[indexPath.row]
+        cell.textLabel?.text = self.NomTable[indexPath.row]
         
         return cell
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 
     /*

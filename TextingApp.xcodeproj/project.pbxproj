@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D6350571EC9ADB0009D563E /* DeuxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6350561EC9ADB0009D563E /* DeuxViewController.swift */; };
 		7D6350591EC9E157009D563E /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6350581EC9E157009D563E /* ThreeViewController.swift */; };
 		7D63505D1EC9EE48009D563E /* CompteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63505C1EC9EE48009D563E /* CompteTableViewController.swift */; };
 		7D63505F1EC9FB48009D563E /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63505E1EC9FB48009D563E /* ContactsTableViewController.swift */; };
@@ -18,6 +17,10 @@
 		7D63D3931EC997BD00FB5B3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D63D3911EC997BD00FB5B3F /* LaunchScreen.storyboard */; };
 		7D63D39E1EC997BD00FB5B3F /* TextingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63D39D1EC997BD00FB5B3F /* TextingAppTests.swift */; };
 		7D63D3A91EC997BD00FB5B3F /* TextingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63D3A81EC997BD00FB5B3F /* TextingAppUITests.swift */; };
+		7DB6C50C1ECAE5B1003FE8C9 /* Deux_View_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6C50B1ECAE5B1003FE8C9 /* Deux_View_Controller.swift */; };
+		7DB6C50E1ECAEE64003FE8C9 /* mentions legales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6C50D1ECAEE64003FE8C9 /* mentions legales.swift */; };
+		7DB6C5111ECB0A01003FE8C9 /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6C50F1ECB0A01003FE8C9 /* TableViewCell1.swift */; };
+		7DB6C5121ECB0A01003FE8C9 /* TableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DB6C5101ECB0A01003FE8C9 /* TableViewCell1.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7D6350561EC9ADB0009D563E /* DeuxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeuxViewController.swift; path = "../../projet iOS/projet iOS/DeuxViewController.swift"; sourceTree = "<group>"; };
 		7D6350581EC9E157009D563E /* ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
 		7D63505C1EC9EE48009D563E /* CompteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompteTableViewController.swift; sourceTree = "<group>"; };
 		7D63505E1EC9FB48009D563E /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,10 @@
 		7D63D3A41EC997BD00FB5B3F /* TextingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D63D3A81EC997BD00FB5B3F /* TextingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextingAppUITests.swift; sourceTree = "<group>"; };
 		7D63D3AA1EC997BD00FB5B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DB6C50B1ECAE5B1003FE8C9 /* Deux_View_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deux_View_Controller.swift; sourceTree = "<group>"; };
+		7DB6C50D1ECAEE64003FE8C9 /* mentions legales.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "mentions legales.swift"; sourceTree = "<group>"; };
+		7DB6C50F1ECB0A01003FE8C9 /* TableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell1.swift; sourceTree = "<group>"; };
+		7DB6C5101ECB0A01003FE8C9 /* TableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell1.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,15 +111,18 @@
 		7D63D3871EC997BD00FB5B3F /* TextingApp */ = {
 			isa = PBXGroup;
 			children = (
-				7D6350561EC9ADB0009D563E /* DeuxViewController.swift */,
 				7D63D3881EC997BD00FB5B3F /* AppDelegate.swift */,
 				7D63D38A1EC997BD00FB5B3F /* ViewController.swift */,
 				7D63D38C1EC997BD00FB5B3F /* Main.storyboard */,
+				7DB6C50D1ECAEE64003FE8C9 /* mentions legales.swift */,
+				7DB6C50B1ECAE5B1003FE8C9 /* Deux_View_Controller.swift */,
 				7D63D38F1EC997BD00FB5B3F /* Assets.xcassets */,
 				7D63D3911EC997BD00FB5B3F /* LaunchScreen.storyboard */,
 				7D63D3941EC997BD00FB5B3F /* Info.plist */,
 				7D6350581EC9E157009D563E /* ThreeViewController.swift */,
 				7D63505C1EC9EE48009D563E /* CompteTableViewController.swift */,
+				7DB6C50F1ECB0A01003FE8C9 /* TableViewCell1.swift */,
+				7DB6C5101ECB0A01003FE8C9 /* TableViewCell1.xib */,
 				7D63505E1EC9FB48009D563E /* ContactsTableViewController.swift */,
 			);
 			path = TextingApp;
@@ -247,6 +256,7 @@
 				7D63D3931EC997BD00FB5B3F /* LaunchScreen.storyboard in Resources */,
 				7D63D3901EC997BD00FB5B3F /* Assets.xcassets in Resources */,
 				7D63D38E1EC997BD00FB5B3F /* Main.storyboard in Resources */,
+				7DB6C5121ECB0A01003FE8C9 /* TableViewCell1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,8 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D6350571EC9ADB0009D563E /* DeuxViewController.swift in Sources */,
+				7DB6C50C1ECAE5B1003FE8C9 /* Deux_View_Controller.swift in Sources */,
+				7DB6C50E1ECAEE64003FE8C9 /* mentions legales.swift in Sources */,
 				7D63D38B1EC997BD00FB5B3F /* ViewController.swift in Sources */,
+				7DB6C5111ECB0A01003FE8C9 /* TableViewCell1.swift in Sources */,
 				7D63505F1EC9FB48009D563E /* ContactsTableViewController.swift in Sources */,
 				7D63D3891EC997BD00FB5B3F /* AppDelegate.swift in Sources */,
 				7D6350591EC9E157009D563E /* ThreeViewController.swift in Sources */,
