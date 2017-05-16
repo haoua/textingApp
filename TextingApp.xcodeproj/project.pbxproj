@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7D6350571EC9ADB0009D563E /* DeuxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6350561EC9ADB0009D563E /* DeuxViewController.swift */; };
+		7D6350591EC9E157009D563E /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6350581EC9E157009D563E /* ThreeViewController.swift */; };
+		7D63505D1EC9EE48009D563E /* CompteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63505C1EC9EE48009D563E /* CompteTableViewController.swift */; };
+		7D63505F1EC9FB48009D563E /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63505E1EC9FB48009D563E /* ContactsTableViewController.swift */; };
 		7D63D3891EC997BD00FB5B3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63D3881EC997BD00FB5B3F /* AppDelegate.swift */; };
 		7D63D38B1EC997BD00FB5B3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63D38A1EC997BD00FB5B3F /* ViewController.swift */; };
 		7D63D38E1EC997BD00FB5B3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D63D38C1EC997BD00FB5B3F /* Main.storyboard */; };
@@ -36,6 +39,9 @@
 
 /* Begin PBXFileReference section */
 		7D6350561EC9ADB0009D563E /* DeuxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeuxViewController.swift; path = "../../projet iOS/projet iOS/DeuxViewController.swift"; sourceTree = "<group>"; };
+		7D6350581EC9E157009D563E /* ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
+		7D63505C1EC9EE48009D563E /* CompteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompteTableViewController.swift; sourceTree = "<group>"; };
+		7D63505E1EC9FB48009D563E /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		7D63D3851EC997BD00FB5B3F /* TextingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D63D3881EC997BD00FB5B3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D63D38A1EC997BD00FB5B3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +112,9 @@
 				7D63D38F1EC997BD00FB5B3F /* Assets.xcassets */,
 				7D63D3911EC997BD00FB5B3F /* LaunchScreen.storyboard */,
 				7D63D3941EC997BD00FB5B3F /* Info.plist */,
+				7D6350581EC9E157009D563E /* ThreeViewController.swift */,
+				7D63505C1EC9EE48009D563E /* CompteTableViewController.swift */,
+				7D63505E1EC9FB48009D563E /* ContactsTableViewController.swift */,
 			);
 			path = TextingApp;
 			sourceTree = "<group>";
@@ -264,7 +273,10 @@
 			files = (
 				7D6350571EC9ADB0009D563E /* DeuxViewController.swift in Sources */,
 				7D63D38B1EC997BD00FB5B3F /* ViewController.swift in Sources */,
+				7D63505F1EC9FB48009D563E /* ContactsTableViewController.swift in Sources */,
 				7D63D3891EC997BD00FB5B3F /* AppDelegate.swift in Sources */,
+				7D6350591EC9E157009D563E /* ThreeViewController.swift in Sources */,
+				7D63505D1EC9EE48009D563E /* CompteTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
