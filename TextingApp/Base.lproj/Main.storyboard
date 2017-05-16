@@ -72,6 +72,67 @@
             </objects>
             <point key="canvasLocation" x="-7.2000000000000002" y="123.68815592203899"/>
         </scene>
+        <!--Blog View Controller-->
+        <scene sceneID="g88-f5-dpa">
+            <objects>
+                <viewController id="XB6-cr-i2P" customClass="BlogViewController" customModule="TextingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OKk-1Y-kQx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bi1-go-x1g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lNC-Hc-qj4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LL-zC-RYZ">
+                                <rect key="frame" x="123" y="103" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vLS-2S-kjY">
+                                <rect key="frame" x="112" y="189" width="184" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ouc-oD-DFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1409" y="843"/>
+        </scene>
+        <!--Param View Controller-->
+        <scene sceneID="pKs-zY-X3E">
+            <objects>
+                <viewController storyboardIdentifier="parametre" id="oEF-gT-rYX" customClass="ParamViewController" customModule="TextingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wc9-Kq-zu9"/>
+                        <viewControllerLayoutGuide type="bottom" id="hiM-Tx-A7S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hmA-zt-Uoq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PARAM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aez-7T-dnP">
+                                <rect key="frame" x="166" y="53" width="57" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aRn-cv-giP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1428" y="1535"/>
+        </scene>
         <!--Compte Table View Controller-->
         <scene sceneID="qVB-DJ-f6v">
             <objects>
@@ -85,7 +146,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oBJ-AJ-ahL" id="56h-t8-q7Q">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -95,6 +156,9 @@
                             <outlet property="delegate" destination="hnP-Ug-VAJ" id="C29-Rm-EG5"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="tableView" destination="0s1-8e-OCH" id="4XD-25-eTo"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Vf-Eq-gSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -168,7 +232,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XC7-sn-vbW" id="jCW-IH-TDG">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -183,10 +247,10 @@
             </objects>
             <point key="canvasLocation" x="772" y="843"/>
         </scene>
-        <!--Deux View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="bjK-xq-fKS">
             <objects>
-                <viewController id="rf4-Tf-na8" customClass="DeuxViewController" customModule="TextingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rf4-Tf-na8" customClass="SecondViewController" customModule="TextingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z7s-Dm-8vQ"/>
                         <viewControllerLayoutGuide type="bottom" id="FV8-ux-sMt"/>
@@ -233,7 +297,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="identifiantUnique" destination="Yuc-GQ-icv" id="I5P-6g-7Yj"/>
+                        <outlet property="identifiantUnique" destination="Yuc-GQ-icv" id="49j-bt-bHm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ej-yS-NxL" userLabel="First Responder" sceneMemberID="firstResponder"/>

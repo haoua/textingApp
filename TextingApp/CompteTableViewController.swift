@@ -10,16 +10,19 @@ import UIKit
 
 class CompteTableViewController: UITableViewController {
     
-    let section = ["Modification mot de passe", "Supression de compte", "Déconnexion"]
+    var section = ["Modification mot de passe", "Supression de compte", "Déconnexion"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        tableView.delegate = self
+//        tableView.dataSource = self
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,15 +45,21 @@ class CompteTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath)
-
         // Configure the cell...
 
         cell.textLabel?.text = self.section[indexPath.row]
         
         return cell
-    }
-    
 
+    }
+
+    
+    func btableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let blogViewController = self.storyboard?.instantiateViewController(withIdentifier: "BlogViewController") as! BlogViewController
+        self.navigationController?.pushViewController(blogViewController, animated: true)
+    }
+
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -95,5 +104,6 @@ class CompteTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }
