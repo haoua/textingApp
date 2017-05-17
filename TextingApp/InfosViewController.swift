@@ -1,5 +1,5 @@
 //
-//  BlogViewController.swift
+//  InfosViewController.swift
 //  TextingApp
 //
 //  Created by stagiaire on 16/05/2017.
@@ -8,16 +8,8 @@
 
 import UIKit
 
-class BlogViewController: UIViewController {
+class InfosViewController: UIViewController {
 
-    @IBOutlet weak var blogNameLabel: UILabel!
-    
-    var blogName = String()
-    
-    override func viewWillAppear(_ animated: Bool) {
-
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

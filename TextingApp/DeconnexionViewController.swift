@@ -1,5 +1,5 @@
 //
-//  ParamViewController.swift
+//  DeconnexionViewController.swift
 //  TextingApp
 //
 //  Created by stagiaire on 16/05/2017.
@@ -8,8 +8,10 @@
 
 import UIKit
 
-class ParamViewController: UIViewController {
+class DeconnexionViewController: UIViewController {
 
+    @IBOutlet weak var btnDeconnexion: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +23,21 @@ class ParamViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func btnActionDeconnexion(_ sender: UIButton) {
+        
+        let decoAlert = UIAlertController(title: "Déconnexion", message: "Voulez-vous vraiment quitter l'application ?", preferredStyle: UIAlertControllerStyle.alert)
+        
+        decoAlert.addAction(UIAlertAction(title: "Quitter", style: .default, handler: { (action: UIAlertAction!) in
+            exit(0);
+        }))
+        
+        decoAlert.addAction(UIAlertAction(title: "Annuler", style: .cancel, handler: { (action: UIAlertAction!) in
 
+        }))
+        
+        present(decoAlert, animated: true, completion: nil)
+        
+    }
     /*
     // MARK: - Navigation
 
