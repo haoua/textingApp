@@ -21,6 +21,10 @@
 		7DB6C50E1ECAEE64003FE8C9 /* mentions legales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6C50D1ECAEE64003FE8C9 /* mentions legales.swift */; };
 		7DB6C5111ECB0A01003FE8C9 /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6C50F1ECB0A01003FE8C9 /* TableViewCell1.swift */; };
 		7DB6C5121ECB0A01003FE8C9 /* TableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DB6C5101ECB0A01003FE8C9 /* TableViewCell1.xib */; };
+		7DB6C5171ECB3D44003FE8C9 /* TableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6C5151ECB3D44003FE8C9 /* TableViewCell2.swift */; };
+		7DB6C5181ECB3D44003FE8C9 /* TableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DB6C5161ECB3D44003FE8C9 /* TableViewCell2.xib */; };
+		7DB6C51B1ECB3DB1003FE8C9 /* TableViewCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6C5191ECB3DB1003FE8C9 /* TableViewCell3.swift */; };
+		7DB6C51C1ECB3DB1003FE8C9 /* TableViewCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DB6C51A1ECB3DB1003FE8C9 /* TableViewCell3.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		7DB6C50D1ECAEE64003FE8C9 /* mentions legales.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "mentions legales.swift"; sourceTree = "<group>"; };
 		7DB6C50F1ECB0A01003FE8C9 /* TableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell1.swift; sourceTree = "<group>"; };
 		7DB6C5101ECB0A01003FE8C9 /* TableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell1.xib; sourceTree = "<group>"; };
+		7DB6C5151ECB3D44003FE8C9 /* TableViewCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell2.swift; path = ../TableViewCell2.swift; sourceTree = "<group>"; };
+		7DB6C5161ECB3D44003FE8C9 /* TableViewCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableViewCell2.xib; path = ../TableViewCell2.xib; sourceTree = "<group>"; };
+		7DB6C5191ECB3DB1003FE8C9 /* TableViewCell3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell3.swift; sourceTree = "<group>"; };
+		7DB6C51A1ECB3DB1003FE8C9 /* TableViewCell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell3.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +119,10 @@
 		7D63D3871EC997BD00FB5B3F /* TextingApp */ = {
 			isa = PBXGroup;
 			children = (
+				7DB6C5151ECB3D44003FE8C9 /* TableViewCell2.swift */,
+				7DB6C5161ECB3D44003FE8C9 /* TableViewCell2.xib */,
+				7DB6C5191ECB3DB1003FE8C9 /* TableViewCell3.swift */,
+				7DB6C51A1ECB3DB1003FE8C9 /* TableViewCell3.xib */,
 				7D63D3881EC997BD00FB5B3F /* AppDelegate.swift */,
 				7D63D38A1EC997BD00FB5B3F /* ViewController.swift */,
 				7D63D38C1EC997BD00FB5B3F /* Main.storyboard */,
@@ -253,8 +265,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DB6C5181ECB3D44003FE8C9 /* TableViewCell2.xib in Resources */,
 				7D63D3931EC997BD00FB5B3F /* LaunchScreen.storyboard in Resources */,
 				7D63D3901EC997BD00FB5B3F /* Assets.xcassets in Resources */,
+				7DB6C51C1ECB3DB1003FE8C9 /* TableViewCell3.xib in Resources */,
 				7D63D38E1EC997BD00FB5B3F /* Main.storyboard in Resources */,
 				7DB6C5121ECB0A01003FE8C9 /* TableViewCell1.xib in Resources */,
 			);
@@ -281,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DB6C5171ECB3D44003FE8C9 /* TableViewCell2.swift in Sources */,
 				7DB6C50C1ECAE5B1003FE8C9 /* Deux_View_Controller.swift in Sources */,
 				7DB6C50E1ECAEE64003FE8C9 /* mentions legales.swift in Sources */,
 				7D63D38B1EC997BD00FB5B3F /* ViewController.swift in Sources */,
@@ -289,6 +304,7 @@
 				7D63D3891EC997BD00FB5B3F /* AppDelegate.swift in Sources */,
 				7D6350591EC9E157009D563E /* ThreeViewController.swift in Sources */,
 				7D63505D1EC9EE48009D563E /* CompteTableViewController.swift in Sources */,
+				7DB6C51B1ECB3DB1003FE8C9 /* TableViewCell3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

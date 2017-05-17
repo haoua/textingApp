@@ -49,7 +49,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHH-DD-g6R">
                                 <rect key="frame" x="149" y="201" width="76" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Connexion"/>
+                                <state key="normal" title="Connexion">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="btnConnexion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pU1-Fn-uJN"/>
                                     <segue destination="FV2-EK-tJL" kind="presentation" id="vPs-sq-azp"/>
@@ -58,7 +60,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayg-9c-rAV">
                                 <rect key="frame" x="149" y="253" width="76" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Inscription"/>
+                                <state key="normal" title="Inscription">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="rf4-Tf-na8" kind="presentation" id="f8r-kt-ZMB"/>
                                 </connections>
@@ -312,12 +316,16 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qyl-Av-Erv">
                                 <rect key="frame" x="232" y="171" width="127" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Valider"/>
+                                <state key="normal" title="Valider">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOa-7V-Bxt">
                                 <rect key="frame" x="33" y="171" width="86" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Retour"/>
+                                <state key="normal" title="Retour">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="d6E-51-5J2"/>
                                 </connections>
@@ -351,6 +359,6 @@
         <image name="fresh_snow_" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jqn-Kf-cHg"/>
+        <segue reference="vPs-sq-azp"/>
     </inferredMetricsTieBreakers>
 </document>
