@@ -481,21 +481,25 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjo-HR-nBD">
-                                <rect key="frame" x="56" y="379" width="46" height="29"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3H-kz-GT6">
+                                <rect key="frame" x="164" y="451" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Retour">
                                     <color key="titleColor" red="1" green="0.63921568630000003" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FV2-EK-tJL" kind="show" id="84o-C6-u1A"/>
+                                    <action selector="btnActioncrypto:" destination="btnActioncrypto:" eventType="touchUpInside" id="uWU-JX-abr"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="btncrypto" destination="g3H-kz-GT6" id="ZWS-Rf-K52"/>
+                        <outlet property="textidentifiant" destination="mW2-xh-05G" id="kyn-sn-75L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2PO-ts-6lT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -571,29 +575,24 @@
                     <view key="view" contentMode="scaleToFill" id="Ihr-Zt-ZS8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F27-0f-FLp">
-                                <rect key="frame" x="16" y="28" width="46" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tfx-9P-VQc">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="MMq-1t-cBh">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="w0f-hw-CCs">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Retour"/>
                                 <connections>
-                                    <segue destination="kYa-gX-pmP" kind="presentation" id="dJK-xV-NV2"/>
+                                    <segue destination="4Jz-La-GVZ" kind="presentation" id="ck2-Er-h4M"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="blabla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7X-42-t1K">
-                                <rect key="frame" x="162" y="52" width="51" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gdf-RD-v1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2663" y="842"/>
+            <point key="canvasLocation" x="4383.1999999999998" y="842.42878560719646"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lSF-Su-ASq">
@@ -655,12 +654,48 @@
             </objects>
             <point key="canvasLocation" x="2492" y="3054"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ABv-wL-E4U">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gY6-Ag-fDD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wBD-eh-FuU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4Jz-La-GVZ" kind="relationship" relationship="rootViewController" id="HmK-NS-fll"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FNC-dC-xMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1712.8" y="843.32833583208401"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TKp-5q-MUc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wQn-Ez-7Sj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bq3-eM-eb2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UuR-S4-T9s" kind="relationship" relationship="rootViewController" id="pyt-XX-h1N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I4V-xj-c4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3444" y="842.42878560719646"/>
+        </scene>
     </scenes>
     <resources>
         <image name="fresh_snow_" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cBy-q9-6R7"/>
-        <segue reference="dJK-xV-NV2"/>
+        <segue reference="HmK-NS-fll"/>
+        <segue reference="Dsy-Bg-k7e"/>
     </inferredMetricsTieBreakers>
 </document>

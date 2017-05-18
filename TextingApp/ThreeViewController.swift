@@ -47,9 +47,10 @@ class ThreeViewController: UIViewController {
         textidentifiant.returnKeyType = .done      // Paramètrage de la touche "Retour" sur Done
     }
     
+
+    @IBOutlet weak var btncrypto: UIButton!
     
-    
-    @IBAction func kyou(_ sender: UIButton) {
+    @IBAction func btnActioncrypto(_ sender: UIButton) {
         let parameters: [String: AnyObject] = [
             kSecAttrKeyType as String: kSecAttrKeyTypeRSA,
             kSecAttrKeySizeInBits as String: 1024 as AnyObject]
@@ -85,8 +86,8 @@ class ThreeViewController: UIViewController {
         }
         
         print(NSString(bytes: &messageDecrypted, length: messageDecryptedSize, encoding: String.Encoding.utf8.rawValue)!)
-        
     }
+
     
     
     
