@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7925AEE148381735C1A2B912 /* Pods_TextingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E66F5038DD8E55F2CD0D54 /* Pods_TextingApp.framework */; };
+		7D6208BC1ECC39A40087756A /* CommunUrlApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6208BB1ECC39A40087756A /* CommunUrlApi.swift */; };
+		7D6208BE1ECC3D6A0087756A /* ConfigUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6208BD1ECC3D6A0087756A /* ConfigUser.swift */; };
+		7D6208C01ECC3E1E0087756A /* ContactsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6208BF1ECC3E1E0087756A /* ContactsList.swift */; };
+		7D6208C21ECC3E7B0087756A /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6208C11ECC3E7B0087756A /* Contact.swift */; };
 		7D6350591EC9E157009D563E /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6350581EC9E157009D563E /* ThreeViewController.swift */; };
 		7D63505F1EC9FB48009D563E /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63505E1EC9FB48009D563E /* ContactsTableViewController.swift */; };
 		7D63D3891EC997BD00FB5B3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63D3881EC997BD00FB5B3F /* AppDelegate.swift */; };
@@ -40,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		76E66F5038DD8E55F2CD0D54 /* Pods_TextingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D6208BB1ECC39A40087756A /* CommunUrlApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunUrlApi.swift; sourceTree = "<group>"; };
+		7D6208BD1ECC3D6A0087756A /* ConfigUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigUser.swift; sourceTree = "<group>"; };
+		7D6208BF1ECC3E1E0087756A /* ContactsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsList.swift; sourceTree = "<group>"; };
+		7D6208C11ECC3E7B0087756A /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		7D6350581EC9E157009D563E /* ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
 		7D63505E1EC9FB48009D563E /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		7D63D3851EC997BD00FB5B3F /* TextingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +69,8 @@
 		7DD47CAE1ECAEE0900CC9CE0 /* BlogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
 		7DD47CB01ECB007D00CC9CE0 /* ParamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParamViewController.swift; sourceTree = "<group>"; };
 		7DD47CB61ECB0CAA00CC9CE0 /* CompteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompteViewController.swift; sourceTree = "<group>"; };
+		929D50AA5601EB84B1710BCA /* Pods-TextingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextingApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextingApp/Pods-TextingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C28BB9741F17DD1EB36F5622 /* Pods-TextingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextingApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextingApp/Pods-TextingApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7925AEE148381735C1A2B912 /* Pods_TextingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +106,8 @@
 				7D63D39C1EC997BD00FB5B3F /* TextingAppTests */,
 				7D63D3A71EC997BD00FB5B3F /* TextingAppUITests */,
 				7D63D3861EC997BD00FB5B3F /* Products */,
+				86656703297C24CE2B49F152 /* Pods */,
+				9BB43F16F69993D9ABDD01BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +124,10 @@
 		7D63D3871EC997BD00FB5B3F /* TextingApp */ = {
 			isa = PBXGroup;
 			children = (
+				7D6208BB1ECC39A40087756A /* CommunUrlApi.swift */,
+				7D6208BD1ECC3D6A0087756A /* ConfigUser.swift */,
+				7D6208BF1ECC3E1E0087756A /* ContactsList.swift */,
+				7D6208C11ECC3E7B0087756A /* Contact.swift */,
 				7D63D3881EC997BD00FB5B3F /* AppDelegate.swift */,
 				7D63D38A1EC997BD00FB5B3F /* ViewController.swift */,
 				7D63D38C1EC997BD00FB5B3F /* Main.storyboard */,
@@ -143,6 +162,23 @@
 			path = TextingAppUITests;
 			sourceTree = "<group>";
 		};
+		86656703297C24CE2B49F152 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				929D50AA5601EB84B1710BCA /* Pods-TextingApp.debug.xcconfig */,
+				C28BB9741F17DD1EB36F5622 /* Pods-TextingApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9BB43F16F69993D9ABDD01BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76E66F5038DD8E55F2CD0D54 /* Pods_TextingApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D63D3AD1EC997BD00FB5B3F /* Build configuration list for PBXNativeTarget "TextingApp" */;
 			buildPhases = (
+				2B1DD47CA745BD0F611D55D3 /* [CP] Check Pods Manifest.lock */,
 				7D63D3811EC997BC00FB5B3F /* Sources */,
 				7D63D3821EC997BC00FB5B3F /* Frameworks */,
 				7D63D3831EC997BC00FB5B3F /* Resources */,
+				9CE04ED8070CE1CB255BCA18 /* [CP] Embed Pods Frameworks */,
+				B3A046BB66187F16870C0695 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,17 +311,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B1DD47CA745BD0F611D55D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9CE04ED8070CE1CB255BCA18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextingApp/Pods-TextingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3A046BB66187F16870C0695 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextingApp/Pods-TextingApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7D63D3811EC997BC00FB5B3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D6208C21ECC3E7B0087756A /* Contact.swift in Sources */,
+				7D6208C01ECC3E1E0087756A /* ContactsList.swift in Sources */,
+				7D6208BE1ECC3D6A0087756A /* ConfigUser.swift in Sources */,
 				7D63D38B1EC997BD00FB5B3F /* ViewController.swift in Sources */,
 				7D63505F1EC9FB48009D563E /* ContactsTableViewController.swift in Sources */,
 				7D63D3891EC997BD00FB5B3F /* AppDelegate.swift in Sources */,
 				7DD47CAB1ECAE46F00CC9CE0 /* SecondViewController.swift in Sources */,
 				7DD47CB71ECB0CAA00CC9CE0 /* CompteViewController.swift in Sources */,
 				7DD47CB11ECB007D00CC9CE0 /* ParamViewController.swift in Sources */,
+				7D6208BC1ECC39A40087756A /* CommunUrlApi.swift in Sources */,
 				7D6350591EC9E157009D563E /* ThreeViewController.swift in Sources */,
 				7DD47CAF1ECAEE0900CC9CE0 /* BlogViewController.swift in Sources */,
 			);
@@ -434,6 +525,7 @@
 		};
 		7D63D3AE1EC997BD00FB5B3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 929D50AA5601EB84B1710BCA /* Pods-TextingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TextingApp/Info.plist;
@@ -446,6 +538,7 @@
 		};
 		7D63D3AF1EC997BD00FB5B3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C28BB9741F17DD1EB36F5622 /* Pods-TextingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TextingApp/Info.plist;

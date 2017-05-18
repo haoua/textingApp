@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TextingApp/ViewController.swift"
-            timestampString = "516545879.308284"
+            timestampString = "516795449.775235"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
             landmarkName = "textPasswordError()"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TextingApp/ViewController.swift"
-            timestampString = "516545725.052476"
+            timestampString = "516795449.775235"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
             landmarkName = "textPasswordError()"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TextingApp/ViewController.swift"
-            timestampString = "516545725.052476"
+            timestampString = "516795449.775235"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
             landmarkName = "configureCustomTextField()"
             landmarkType = "7">
          </BreakpointContent>
