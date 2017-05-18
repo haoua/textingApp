@@ -14,7 +14,7 @@ class CompteViewController: UIViewController, UITableViewDataSource, UITableView
     
     let textCellIdentifier = "TextCell"
     
-    let swiftBlogs = ["Ray Wenderlich", "NSHipster", "iOS Developer Tips", "Jameson Quave", "Natasha The Robot", "Coding Explorer", "That Thing In Swift", "Andrew Bancroft", "iAchieved.it", "Airspeed Velocity"]
+    let swiftBlogs = ["Modification mot de passe", "Déconnexion", "Supression du compte"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,20 +52,26 @@ class CompteViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.deselectRow(at: indexPath as IndexPath, animated: true)
         
         let row = indexPath.row
-        print(row)
         
-        
-        if row==1
+        if row==0
         {
-        let BlogViewController = self.storyboard?.instantiateViewController(withIdentifier: "Blog") as! BlogViewController
-            self.navigationController?.pushViewController(BlogViewController, animated: true)
+        let MotdePasseViewController = self.storyboard?.instantiateViewController(withIdentifier: "Mdp") as! MotdePasseViewController
+            self.navigationController?.pushViewController(MotdePasseViewController, animated: true)
         }
-        else
+        else if row==1
         {
-            let ParamViewController = self.storyboard?.instantiateViewController(withIdentifier: "Param") as! ParamViewController
-            self.navigationController?.pushViewController(ParamViewController, animated: true)
+            let DeconnexionViewController = self.storyboard?.instantiateViewController(withIdentifier: "Deconnexion") as! DeconnexionViewController
+            self.navigationController?.pushViewController(DeconnexionViewController, animated: true)
+        }
+        else if row==2
+        {
+            let SupressionViewController = self.storyboard?.instantiateViewController(withIdentifier: "Supression") as! SupressionViewController
+            self.navigationController?.pushViewController(SupressionViewController, animated: true)
         }
     }
+    
+
+    
 
     /*
     // MARK: - Navigation
