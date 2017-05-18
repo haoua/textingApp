@@ -15,6 +15,7 @@
 		7D63D3931EC997BD00FB5B3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D63D3911EC997BD00FB5B3F /* LaunchScreen.storyboard */; };
 		7D63D39E1EC997BD00FB5B3F /* TextingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63D39D1EC997BD00FB5B3F /* TextingAppTests.swift */; };
 		7D63D3A91EC997BD00FB5B3F /* TextingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63D3A81EC997BD00FB5B3F /* TextingAppUITests.swift */; };
+<<<<<<< HEAD
 		7D9E17F51ECC51F000FA3E80 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E17F41ECC51F000FA3E80 /* ContactViewController.swift */; };
 		7D9E17F71ECC537900FA3E80 /* DiscussionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E17F61ECC537900FA3E80 /* DiscussionViewController.swift */; };
 		7DD47CAB1ECAE46F00CC9CE0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD47CAA1ECAE46F00CC9CE0 /* SecondViewController.swift */; };
@@ -26,6 +27,16 @@
 		8E3DEF33BED16282BBB7CC50 /* Pods_TextingAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5AC137FFC7223E80B5925E /* Pods_TextingAppUITests.framework */; };
 		A0E54CE067BE219B3E7674F0 /* Pods_TextingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E100A0594917604F94B7EF /* Pods_TextingApp.framework */; };
 		EF847F1AB87AEB522F80FC11 /* Pods_TextingAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5299AAF1167C536EBF786328 /* Pods_TextingAppTests.framework */; };
+=======
+		7DB6C50C1ECAE5B1003FE8C9 /* Deux_View_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6C50B1ECAE5B1003FE8C9 /* Deux_View_Controller.swift */; };
+		7DB6C50E1ECAEE64003FE8C9 /* mentions legales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6C50D1ECAEE64003FE8C9 /* mentions legales.swift */; };
+		7DB6C5111ECB0A01003FE8C9 /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6C50F1ECB0A01003FE8C9 /* TableViewCell1.swift */; };
+		7DB6C5121ECB0A01003FE8C9 /* TableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DB6C5101ECB0A01003FE8C9 /* TableViewCell1.xib */; };
+		7DB6C5171ECB3D44003FE8C9 /* TableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6C5151ECB3D44003FE8C9 /* TableViewCell2.swift */; };
+		7DB6C5181ECB3D44003FE8C9 /* TableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DB6C5161ECB3D44003FE8C9 /* TableViewCell2.xib */; };
+		7DB6C51B1ECB3DB1003FE8C9 /* TableViewCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6C5191ECB3DB1003FE8C9 /* TableViewCell3.swift */; };
+		7DB6C51C1ECB3DB1003FE8C9 /* TableViewCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DB6C51A1ECB3DB1003FE8C9 /* TableViewCell3.xib */; };
+>>>>>>> d9c78d57820f631a5b09af0fe2e9803de6b94ea4
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		44B60917ADAA5A30659C191B /* Pods-TextingAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextingAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextingAppUITests/Pods-TextingAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4750EAEDE402543004F657C6 /* Pods-TextingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextingApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextingApp/Pods-TextingApp.release.xcconfig"; sourceTree = "<group>"; };
 		4B98CF8D7ABD1E090023FC20 /* Pods-TextingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextingApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextingApp/Pods-TextingApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -53,6 +65,8 @@
 		56DCBCF77E153091A74E32A0 /* Pods-TextingAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextingAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextingAppUITests/Pods-TextingAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		709C54C02CE8EF40E504705F /* Pods-TextingAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextingAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextingAppTests/Pods-TextingAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		75E100A0594917604F94B7EF /* Pods_TextingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+=======
+>>>>>>> d9c78d57820f631a5b09af0fe2e9803de6b94ea4
 		7D6350581EC9E157009D563E /* ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
 		7D63D3851EC997BD00FB5B3F /* TextingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D63D3881EC997BD00FB5B3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +81,7 @@
 		7D63D3A41EC997BD00FB5B3F /* TextingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D63D3A81EC997BD00FB5B3F /* TextingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextingAppUITests.swift; sourceTree = "<group>"; };
 		7D63D3AA1EC997BD00FB5B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		7D9E17F41ECC51F000FA3E80 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		7D9E17F61ECC537900FA3E80 /* DiscussionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscussionViewController.swift; sourceTree = "<group>"; };
 		7DD47CAA1ECAE46F00CC9CE0 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +92,16 @@
 		7DD47CC01ECB355600CC9CE0 /* InfosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfosViewController.swift; sourceTree = "<group>"; };
 		8D5AC137FFC7223E80B5925E /* Pods_TextingAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextingAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98DB7739F156D5C12202E7BA /* Pods-TextingAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextingAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextingAppTests/Pods-TextingAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+=======
+		7DB6C50B1ECAE5B1003FE8C9 /* Deux_View_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deux_View_Controller.swift; sourceTree = "<group>"; };
+		7DB6C50D1ECAEE64003FE8C9 /* mentions legales.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "mentions legales.swift"; sourceTree = "<group>"; };
+		7DB6C50F1ECB0A01003FE8C9 /* TableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell1.swift; sourceTree = "<group>"; };
+		7DB6C5101ECB0A01003FE8C9 /* TableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell1.xib; sourceTree = "<group>"; };
+		7DB6C5151ECB3D44003FE8C9 /* TableViewCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell2.swift; path = ../TableViewCell2.swift; sourceTree = "<group>"; };
+		7DB6C5161ECB3D44003FE8C9 /* TableViewCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableViewCell2.xib; path = ../TableViewCell2.xib; sourceTree = "<group>"; };
+		7DB6C5191ECB3DB1003FE8C9 /* TableViewCell3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell3.swift; sourceTree = "<group>"; };
+		7DB6C51A1ECB3DB1003FE8C9 /* TableViewCell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell3.xib; sourceTree = "<group>"; };
+>>>>>>> d9c78d57820f631a5b09af0fe2e9803de6b94ea4
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +167,13 @@
 		7D63D3871EC997BD00FB5B3F /* TextingApp */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+=======
+				7DB6C5151ECB3D44003FE8C9 /* TableViewCell2.swift */,
+				7DB6C5161ECB3D44003FE8C9 /* TableViewCell2.xib */,
+				7DB6C5191ECB3DB1003FE8C9 /* TableViewCell3.swift */,
+				7DB6C51A1ECB3DB1003FE8C9 /* TableViewCell3.xib */,
+>>>>>>> d9c78d57820f631a5b09af0fe2e9803de6b94ea4
 				7D63D3881EC997BD00FB5B3F /* AppDelegate.swift */,
 				7D63D38A1EC997BD00FB5B3F /* ViewController.swift */,
 				7D63D38C1EC997BD00FB5B3F /* Main.storyboard */,
@@ -151,6 +183,7 @@
 				7D63D3911EC997BD00FB5B3F /* LaunchScreen.storyboard */,
 				7D63D3941EC997BD00FB5B3F /* Info.plist */,
 				7D6350581EC9E157009D563E /* ThreeViewController.swift */,
+<<<<<<< HEAD
 				7DD47CAA1ECAE46F00CC9CE0 /* SecondViewController.swift */,
 				7DD47CB61ECB0CAA00CC9CE0 /* CompteViewController.swift */,
 				7DD47CB81ECB2F4400CC9CE0 /* MotdePasseViewController.swift */,
@@ -159,6 +192,12 @@
 				7DD47CC01ECB355600CC9CE0 /* InfosViewController.swift */,
 				7D9E17F41ECC51F000FA3E80 /* ContactViewController.swift */,
 				7D9E17F61ECC537900FA3E80 /* DiscussionViewController.swift */,
+=======
+				7D63505C1EC9EE48009D563E /* CompteTableViewController.swift */,
+				7DB6C50F1ECB0A01003FE8C9 /* TableViewCell1.swift */,
+				7DB6C5101ECB0A01003FE8C9 /* TableViewCell1.xib */,
+				7D63505E1EC9FB48009D563E /* ContactsTableViewController.swift */,
+>>>>>>> d9c78d57820f631a5b09af0fe2e9803de6b94ea4
 			);
 			path = TextingApp;
 			sourceTree = "<group>";
@@ -478,17 +517,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				7DD47CC11ECB355600CC9CE0 /* InfosViewController.swift in Sources */,
 				7D63D38B1EC997BD00FB5B3F /* ViewController.swift in Sources */,
 				7DD47CBD1ECB2F6100CC9CE0 /* SupressionViewController.swift in Sources */,
+=======
+				7DB6C5171ECB3D44003FE8C9 /* TableViewCell2.swift in Sources */,
+				7DB6C50C1ECAE5B1003FE8C9 /* Deux_View_Controller.swift in Sources */,
+				7DB6C50E1ECAEE64003FE8C9 /* mentions legales.swift in Sources */,
+				7D63D38B1EC997BD00FB5B3F /* ViewController.swift in Sources */,
+				7DB6C5111ECB0A01003FE8C9 /* TableViewCell1.swift in Sources */,
+				7D63505F1EC9FB48009D563E /* ContactsTableViewController.swift in Sources */,
+>>>>>>> d9c78d57820f631a5b09af0fe2e9803de6b94ea4
 				7D63D3891EC997BD00FB5B3F /* AppDelegate.swift in Sources */,
 				7DD47CAB1ECAE46F00CC9CE0 /* SecondViewController.swift in Sources */,
 				7DD47CBF1ECB2FA500CC9CE0 /* DeconnexionViewController.swift in Sources */,
 				7DD47CB71ECB0CAA00CC9CE0 /* CompteViewController.swift in Sources */,
 				7DD47CB91ECB2F4400CC9CE0 /* MotdePasseViewController.swift in Sources */,
 				7D6350591EC9E157009D563E /* ThreeViewController.swift in Sources */,
+<<<<<<< HEAD
 				7D9E17F71ECC537900FA3E80 /* DiscussionViewController.swift in Sources */,
 				7D9E17F51ECC51F000FA3E80 /* ContactViewController.swift in Sources */,
+=======
+				7D63505D1EC9EE48009D563E /* CompteTableViewController.swift in Sources */,
+				7DB6C51B1ECB3DB1003FE8C9 /* TableViewCell3.swift in Sources */,
+>>>>>>> d9c78d57820f631a5b09af0fe2e9803de6b94ea4
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
