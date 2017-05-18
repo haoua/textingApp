@@ -47,6 +47,20 @@ class ContactViewController: UIViewController, UITableViewDataSource, UITableVie
         
         return cell
     }
+    
+    func tableView(_ didSelectRowAttableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+
+        let discussionController = DiscussionViewController()
+        discussionController.selectedName = swiftBlogs[indexPath.row]
+        discussionController.delegate = self
+        navigationController?.pushViewController(discussionController, animated: true)
+    }
+    
+    func updatedSelectedName(newName: String) {
+        print(newName)
+    }
+
 
     /*
     // MARK: - Navigation

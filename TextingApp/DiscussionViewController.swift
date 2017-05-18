@@ -10,14 +10,22 @@ import UIKit
 
 import JSQMessagesViewController
 
+protocol DiscussionViewControllerDelegate{
+    func myVCDidFinish(controller:DiscussionViewController,text:String)
+}
+
 struct User {
     let id: String
     let name: String
 }
 
 class DiscussionViewController: JSQMessagesViewController {
+    
+    var selectedName: String!
+    weak var delegate:ContactViewController? = nil
+
     let user1 = User(id: "1", name: "Awa")
-    let user2 = User(id: "2", name: "Aymeric")
+    //let user2 = User(id: "2", name: selectedName)
     
     var currentUser: User {
     return user1
@@ -25,6 +33,7 @@ class DiscussionViewController: JSQMessagesViewController {
     
     //all messages of users1, users2
     var messages = [JSQMessage]()
+
 }
 
 extension DiscussionViewController {
@@ -46,7 +55,7 @@ extension DiscussionViewController {
     }
     
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout!, heightForMessageBubbleTopLabelAt indexPath: IndexPath!) -> CGFloat{
-        return 15
+        return 20
     }
     
     
@@ -64,8 +73,6 @@ extension DiscussionViewController {
         } else {
             return bubbleFactory?.incomingMessagesBubbleImage(with: .blue)
         }
-        
-        return bubbleFactory?.incomingMessagesBubbleImage(with: .green)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
@@ -75,10 +82,12 @@ extension DiscussionViewController {
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageDataForItemAt indexPath: IndexPath!) -> JSQMessageData!{
         return messages[indexPath.row]
     }
+    
 }
 
 extension DiscussionViewController{
     override func viewDidLoad() {
+    
         super.viewDidLoad()
         
         self.senderId = currentUser.id
@@ -92,13 +101,21 @@ extension DiscussionViewController{
 extension DiscussionViewController {
     func getMessages() -> [JSQMessage]{
     var messages = [JSQMessage]()
-   
+        
     //let message1 = JSQMessage(senderId: "1", displayName: "Awa", text: "Hey dude")
-    let message2 = JSQMessage(senderId: "2", displayName: "Aymeric", text: "Yoh man")
+    let message2 = JSQMessage(senderId: "2", displayName: selectedName, text: "Yoh man")
         
     //messages.append(message1!)
     messages.append(message2!)
         
+        
+    self.delegate?.updatedSelectedName(newName: selectedName)
+        
     return messages
     }
+    
+
+    
+
+    
 }

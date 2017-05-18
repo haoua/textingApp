@@ -328,19 +328,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPY-b7-4Mn">
-                                <rect key="frame" x="164" y="389" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3H-kz-GT6">
+                                <rect key="frame" x="164" y="451" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="kyou:" destination="FV2-EK-tJL" eventType="touchUpInside" id="DSC-71-0CP"/>
+                                    <action selector="btnActioncrypto:" destination="FV2-EK-tJL" eventType="touchUpInside" id="uWU-JX-abr"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="kyoukyou" destination="IPY-b7-4Mn" id="TEA-GV-8TM"/>
+                        <outlet property="btncrypto" destination="g3H-kz-GT6" id="ZWS-Rf-K52"/>
                         <outlet property="textidentifiant" destination="mW2-xh-05G" id="kyn-sn-75L"/>
                     </connections>
                 </viewController>
@@ -381,9 +381,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="UuR-S4-T9s" kind="presentation" id="eiK-ps-AZt"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -418,29 +415,24 @@
                     <view key="view" contentMode="scaleToFill" id="AKZ-xA-x1F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlA-Qf-pL7">
-                                <rect key="frame" x="16" y="28" width="46" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tfx-9P-VQc">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="MMq-1t-cBh">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="w0f-hw-CCs">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Retour"/>
                                 <connections>
-                                    <segue destination="4Jz-La-GVZ" kind="presentation" id="MhR-M5-Z2o"/>
+                                    <segue destination="4Jz-La-GVZ" kind="presentation" id="ck2-Er-h4M"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="blabla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itg-yd-uuk">
-                                <rect key="frame" x="162" y="52" width="51" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sfl-2l-VZv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3444" y="843"/>
+            <point key="canvasLocation" x="4383.1999999999998" y="842.42878560719646"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="bjK-xq-fKS">
@@ -578,9 +570,27 @@
             </objects>
             <point key="canvasLocation" x="1712.8" y="843.32833583208401"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TKp-5q-MUc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wQn-Ez-7Sj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bq3-eM-eb2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UuR-S4-T9s" kind="relationship" relationship="rootViewController" id="pyt-XX-h1N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I4V-xj-c4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3444" y="842.42878560719646"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="MhR-M5-Z2o"/>
-        <segue reference="XKv-Zn-0B8"/>
+        <segue reference="HmK-NS-fll"/>
+        <segue reference="Dsy-Bg-k7e"/>
     </inferredMetricsTieBreakers>
 </document>
