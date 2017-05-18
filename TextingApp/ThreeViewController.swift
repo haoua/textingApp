@@ -11,26 +11,26 @@ import UIKit
 import Security
 
 class ThreeViewController: UIViewController {
-
+    
     @IBOutlet weak var textidentifiant: UITextField!
     
     @IBOutlet weak var button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         configureCustomTextField()
         
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-     func configureCustomTextField() {
-
+    func configureCustomTextField() {
+        
         let txtLoginImage = UIImage(named: "search")!
         
         // 2. Définition d'un conteneur pour l'image
@@ -47,9 +47,8 @@ class ThreeViewController: UIViewController {
         textidentifiant.returnKeyType = .done      // Paramètrage de la touche "Retour" sur Done
     }
     
-
     
-    @IBOutlet weak var kyoukyou: UIButton!
+    
     @IBAction func kyou(_ sender: UIButton) {
         let parameters: [String: AnyObject] = [
             kSecAttrKeyType as String: kSecAttrKeyTypeRSA,
@@ -88,19 +87,19 @@ class ThreeViewController: UIViewController {
         print(NSString(bytes: &messageDecrypted, length: messageDecryptedSize, encoding: String.Encoding.utf8.rawValue)!)
         
     }
-
-
+    
+    
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
+    
     
 }
