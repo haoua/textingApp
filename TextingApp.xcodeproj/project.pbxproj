@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30FBC0101159FA125E94224A /* Pods_TextingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E559E8371BF666A0F30871F /* Pods_TextingApp.framework */; };
+		3DF8599BACBBB43D608A8116 /* Pods_TextingAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44016AA2F3778270BF0003F /* Pods_TextingAppTests.framework */; };
+		46C0DA90D2571B88D892FDDF /* Pods_TextingAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506CFCB88F560594BB3A7289 /* Pods_TextingAppUITests.framework */; };
+		7D0078AE1ECC58E80026CF63 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0078AD1ECC58E80026CF63 /* RegisterViewController.swift */; };
+		7D0078B21ECC5A4C0026CF63 /* DeconnexionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0078AF1ECC5A4C0026CF63 /* DeconnexionViewController.swift */; };
+		7D0078B31ECC5A4C0026CF63 /* MotdePasseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0078B01ECC5A4C0026CF63 /* MotdePasseViewController.swift */; };
+		7D0078B41ECC5A4C0026CF63 /* SupressionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0078B11ECC5A4C0026CF63 /* SupressionViewController.swift */; };
+		7D0078B71ECC9A440026CF63 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0078B51ECC9A440026CF63 /* ContactViewController.swift */; };
+		7D0078B81ECC9A440026CF63 /* DiscussionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0078B61ECC9A440026CF63 /* DiscussionViewController.swift */; };
+		7D0078BA1ECCA1750026CF63 /* ParamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0078B91ECCA1750026CF63 /* ParamsViewController.swift */; };
 		7D6350591EC9E157009D563E /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6350581EC9E157009D563E /* ThreeViewController.swift */; };
-		7D63505D1EC9EE48009D563E /* CompteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63505C1EC9EE48009D563E /* CompteTableViewController.swift */; };
 		7D63505F1EC9FB48009D563E /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63505E1EC9FB48009D563E /* ContactsTableViewController.swift */; };
 		7D63D3891EC997BD00FB5B3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63D3881EC997BD00FB5B3F /* AppDelegate.swift */; };
 		7D63D38B1EC997BD00FB5B3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63D38A1EC997BD00FB5B3F /* ViewController.swift */; };
@@ -17,14 +26,10 @@
 		7D63D3931EC997BD00FB5B3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D63D3911EC997BD00FB5B3F /* LaunchScreen.storyboard */; };
 		7D63D39E1EC997BD00FB5B3F /* TextingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63D39D1EC997BD00FB5B3F /* TextingAppTests.swift */; };
 		7D63D3A91EC997BD00FB5B3F /* TextingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63D3A81EC997BD00FB5B3F /* TextingAppUITests.swift */; };
-		7DB6C50C1ECAE5B1003FE8C9 /* Deux_View_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6C50B1ECAE5B1003FE8C9 /* Deux_View_Controller.swift */; };
-		7DB6C50E1ECAEE64003FE8C9 /* mentions legales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6C50D1ECAEE64003FE8C9 /* mentions legales.swift */; };
-		7DB6C5111ECB0A01003FE8C9 /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6C50F1ECB0A01003FE8C9 /* TableViewCell1.swift */; };
-		7DB6C5121ECB0A01003FE8C9 /* TableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DB6C5101ECB0A01003FE8C9 /* TableViewCell1.xib */; };
-		7DB6C5171ECB3D44003FE8C9 /* TableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6C5151ECB3D44003FE8C9 /* TableViewCell2.swift */; };
-		7DB6C5181ECB3D44003FE8C9 /* TableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DB6C5161ECB3D44003FE8C9 /* TableViewCell2.xib */; };
-		7DB6C51B1ECB3DB1003FE8C9 /* TableViewCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6C5191ECB3DB1003FE8C9 /* TableViewCell3.swift */; };
-		7DB6C51C1ECB3DB1003FE8C9 /* TableViewCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DB6C51A1ECB3DB1003FE8C9 /* TableViewCell3.xib */; };
+		7DB6C51E1ECDCB4F003FE8C9 /* InfosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6C51D1ECDCB4F003FE8C9 /* InfosViewController.swift */; };
+		7DD47CAF1ECAEE0900CC9CE0 /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD47CAE1ECAEE0900CC9CE0 /* BlogViewController.swift */; };
+		7DD47CB11ECB007D00CC9CE0 /* ParamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD47CB01ECB007D00CC9CE0 /* ParamViewController.swift */; };
+		7DD47CB71ECB0CAA00CC9CE0 /* CompteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD47CB61ECB0CAA00CC9CE0 /* CompteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +50,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E559E8371BF666A0F30871F /* Pods_TextingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A5BC16CA38CDEA48F6432D8 /* Pods-TextingAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextingAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextingAppTests/Pods-TextingAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		506CFCB88F560594BB3A7289 /* Pods_TextingAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextingAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		557A4C5E3CA0164DA5BF2F9D /* Pods-TextingAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextingAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextingAppUITests/Pods-TextingAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		56B552AB631EBAB1401DFA71 /* Pods-TextingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextingApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextingApp/Pods-TextingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7D0078AD1ECC58E80026CF63 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		7D0078AF1ECC5A4C0026CF63 /* DeconnexionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeconnexionViewController.swift; sourceTree = "<group>"; };
+		7D0078B01ECC5A4C0026CF63 /* MotdePasseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotdePasseViewController.swift; sourceTree = "<group>"; };
+		7D0078B11ECC5A4C0026CF63 /* SupressionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupressionViewController.swift; sourceTree = "<group>"; };
+		7D0078B51ECC9A440026CF63 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		7D0078B61ECC9A440026CF63 /* DiscussionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscussionViewController.swift; sourceTree = "<group>"; };
+		7D0078B91ECCA1750026CF63 /* ParamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParamsViewController.swift; sourceTree = "<group>"; };
 		7D6350581EC9E157009D563E /* ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
-		7D63505C1EC9EE48009D563E /* CompteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompteTableViewController.swift; sourceTree = "<group>"; };
 		7D63505E1EC9FB48009D563E /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		7D63D3851EC997BD00FB5B3F /* TextingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D63D3881EC997BD00FB5B3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,14 +77,14 @@
 		7D63D3A41EC997BD00FB5B3F /* TextingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D63D3A81EC997BD00FB5B3F /* TextingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextingAppUITests.swift; sourceTree = "<group>"; };
 		7D63D3AA1EC997BD00FB5B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7DB6C50B1ECAE5B1003FE8C9 /* Deux_View_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deux_View_Controller.swift; sourceTree = "<group>"; };
-		7DB6C50D1ECAEE64003FE8C9 /* mentions legales.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "mentions legales.swift"; sourceTree = "<group>"; };
-		7DB6C50F1ECB0A01003FE8C9 /* TableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell1.swift; sourceTree = "<group>"; };
-		7DB6C5101ECB0A01003FE8C9 /* TableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell1.xib; sourceTree = "<group>"; };
-		7DB6C5151ECB3D44003FE8C9 /* TableViewCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell2.swift; path = ../TableViewCell2.swift; sourceTree = "<group>"; };
-		7DB6C5161ECB3D44003FE8C9 /* TableViewCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableViewCell2.xib; path = ../TableViewCell2.xib; sourceTree = "<group>"; };
-		7DB6C5191ECB3DB1003FE8C9 /* TableViewCell3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell3.swift; sourceTree = "<group>"; };
-		7DB6C51A1ECB3DB1003FE8C9 /* TableViewCell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell3.xib; sourceTree = "<group>"; };
+		7DB6C51D1ECDCB4F003FE8C9 /* InfosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfosViewController.swift; sourceTree = "<group>"; };
+		7DD47CAE1ECAEE0900CC9CE0 /* BlogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
+		7DD47CB01ECB007D00CC9CE0 /* ParamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParamViewController.swift; sourceTree = "<group>"; };
+		7DD47CB61ECB0CAA00CC9CE0 /* CompteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompteViewController.swift; sourceTree = "<group>"; };
+		A44016AA2F3778270BF0003F /* Pods_TextingAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextingAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACC82C0C0310C8EB28A94E95 /* Pods-TextingAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextingAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextingAppUITests/Pods-TextingAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AECBFC58F60B84EAD0D01FCB /* Pods-TextingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextingApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextingApp/Pods-TextingApp.release.xcconfig"; sourceTree = "<group>"; };
+		BEF0E37051C6FECD471B74FC /* Pods-TextingAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextingAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextingAppTests/Pods-TextingAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30FBC0101159FA125E94224A /* Pods_TextingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DF8599BACBBB43D608A8116 /* Pods_TextingAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +108,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C0DA90D2571B88D892FDDF /* Pods_TextingAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2066B72D280B5490115EC21D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E559E8371BF666A0F30871F /* Pods_TextingApp.framework */,
+				A44016AA2F3778270BF0003F /* Pods_TextingAppTests.framework */,
+				506CFCB88F560594BB3A7289 /* Pods_TextingAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7D63D37C1EC997BC00FB5B3F = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +132,8 @@
 				7D63D39C1EC997BD00FB5B3F /* TextingAppTests */,
 				7D63D3A71EC997BD00FB5B3F /* TextingAppUITests */,
 				7D63D3861EC997BD00FB5B3F /* Products */,
+				F33095E5B5D6985F2858AA00 /* Pods */,
+				2066B72D280B5490115EC21D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,23 +150,25 @@
 		7D63D3871EC997BD00FB5B3F /* TextingApp */ = {
 			isa = PBXGroup;
 			children = (
-				7DB6C5151ECB3D44003FE8C9 /* TableViewCell2.swift */,
-				7DB6C5161ECB3D44003FE8C9 /* TableViewCell2.xib */,
-				7DB6C5191ECB3DB1003FE8C9 /* TableViewCell3.swift */,
-				7DB6C51A1ECB3DB1003FE8C9 /* TableViewCell3.xib */,
 				7D63D3881EC997BD00FB5B3F /* AppDelegate.swift */,
 				7D63D38A1EC997BD00FB5B3F /* ViewController.swift */,
 				7D63D38C1EC997BD00FB5B3F /* Main.storyboard */,
-				7DB6C50D1ECAEE64003FE8C9 /* mentions legales.swift */,
-				7DB6C50B1ECAE5B1003FE8C9 /* Deux_View_Controller.swift */,
+				7DB6C51D1ECDCB4F003FE8C9 /* InfosViewController.swift */,
 				7D63D38F1EC997BD00FB5B3F /* Assets.xcassets */,
 				7D63D3911EC997BD00FB5B3F /* LaunchScreen.storyboard */,
 				7D63D3941EC997BD00FB5B3F /* Info.plist */,
 				7D6350581EC9E157009D563E /* ThreeViewController.swift */,
-				7D63505C1EC9EE48009D563E /* CompteTableViewController.swift */,
-				7DB6C50F1ECB0A01003FE8C9 /* TableViewCell1.swift */,
-				7DB6C5101ECB0A01003FE8C9 /* TableViewCell1.xib */,
 				7D63505E1EC9FB48009D563E /* ContactsTableViewController.swift */,
+				7D0078AD1ECC58E80026CF63 /* RegisterViewController.swift */,
+				7DD47CAE1ECAEE0900CC9CE0 /* BlogViewController.swift */,
+				7D0078B51ECC9A440026CF63 /* ContactViewController.swift */,
+				7D0078B61ECC9A440026CF63 /* DiscussionViewController.swift */,
+				7DD47CB01ECB007D00CC9CE0 /* ParamViewController.swift */,
+				7DD47CB61ECB0CAA00CC9CE0 /* CompteViewController.swift */,
+				7D0078AF1ECC5A4C0026CF63 /* DeconnexionViewController.swift */,
+				7D0078B01ECC5A4C0026CF63 /* MotdePasseViewController.swift */,
+				7D0078B11ECC5A4C0026CF63 /* SupressionViewController.swift */,
+				7D0078B91ECCA1750026CF63 /* ParamsViewController.swift */,
 			);
 			path = TextingApp;
 			sourceTree = "<group>";
@@ -158,6 +191,19 @@
 			path = TextingAppUITests;
 			sourceTree = "<group>";
 		};
+		F33095E5B5D6985F2858AA00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56B552AB631EBAB1401DFA71 /* Pods-TextingApp.debug.xcconfig */,
+				AECBFC58F60B84EAD0D01FCB /* Pods-TextingApp.release.xcconfig */,
+				BEF0E37051C6FECD471B74FC /* Pods-TextingAppTests.debug.xcconfig */,
+				1A5BC16CA38CDEA48F6432D8 /* Pods-TextingAppTests.release.xcconfig */,
+				ACC82C0C0310C8EB28A94E95 /* Pods-TextingAppUITests.debug.xcconfig */,
+				557A4C5E3CA0164DA5BF2F9D /* Pods-TextingAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,9 +211,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D63D3AD1EC997BD00FB5B3F /* Build configuration list for PBXNativeTarget "TextingApp" */;
 			buildPhases = (
+				423A819A284EAF3FB87D3651 /* [CP] Check Pods Manifest.lock */,
 				7D63D3811EC997BC00FB5B3F /* Sources */,
 				7D63D3821EC997BC00FB5B3F /* Frameworks */,
 				7D63D3831EC997BC00FB5B3F /* Resources */,
+				02222C873C3C26F7A757C78B /* [CP] Embed Pods Frameworks */,
+				87D85ABDED5E27D61AEA80F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +231,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D63D3B01EC997BD00FB5B3F /* Build configuration list for PBXNativeTarget "TextingAppTests" */;
 			buildPhases = (
+				6817C3747CC575C23CF8F2A3 /* [CP] Check Pods Manifest.lock */,
 				7D63D3951EC997BD00FB5B3F /* Sources */,
 				7D63D3961EC997BD00FB5B3F /* Frameworks */,
 				7D63D3971EC997BD00FB5B3F /* Resources */,
+				5CB64B2386F69400A18BB07F /* [CP] Embed Pods Frameworks */,
+				B10401D9E5760E08BCC0517E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,9 +252,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D63D3B31EC997BD00FB5B3F /* Build configuration list for PBXNativeTarget "TextingAppUITests" */;
 			buildPhases = (
+				F4598956296D97143861049A /* [CP] Check Pods Manifest.lock */,
 				7D63D3A01EC997BD00FB5B3F /* Sources */,
 				7D63D3A11EC997BD00FB5B3F /* Frameworks */,
 				7D63D3A21EC997BD00FB5B3F /* Resources */,
+				EE87CAEE5B90CBB7EDDBF736 /* [CP] Embed Pods Frameworks */,
+				A9D833C9392344D1A1E05D3F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,12 +320,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DB6C5181ECB3D44003FE8C9 /* TableViewCell2.xib in Resources */,
 				7D63D3931EC997BD00FB5B3F /* LaunchScreen.storyboard in Resources */,
 				7D63D3901EC997BD00FB5B3F /* Assets.xcassets in Resources */,
-				7DB6C51C1ECB3DB1003FE8C9 /* TableViewCell3.xib in Resources */,
 				7D63D38E1EC997BD00FB5B3F /* Main.storyboard in Resources */,
-				7DB6C5121ECB0A01003FE8C9 /* TableViewCell1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,21 +342,164 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02222C873C3C26F7A757C78B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextingApp/Pods-TextingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		423A819A284EAF3FB87D3651 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5CB64B2386F69400A18BB07F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextingAppTests/Pods-TextingAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6817C3747CC575C23CF8F2A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		87D85ABDED5E27D61AEA80F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextingApp/Pods-TextingApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9D833C9392344D1A1E05D3F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextingAppUITests/Pods-TextingAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B10401D9E5760E08BCC0517E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextingAppTests/Pods-TextingAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE87CAEE5B90CBB7EDDBF736 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextingAppUITests/Pods-TextingAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4598956296D97143861049A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7D63D3811EC997BC00FB5B3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DB6C5171ECB3D44003FE8C9 /* TableViewCell2.swift in Sources */,
-				7DB6C50C1ECAE5B1003FE8C9 /* Deux_View_Controller.swift in Sources */,
-				7DB6C50E1ECAEE64003FE8C9 /* mentions legales.swift in Sources */,
+				7D0078BA1ECCA1750026CF63 /* ParamsViewController.swift in Sources */,
+				7D0078AE1ECC58E80026CF63 /* RegisterViewController.swift in Sources */,
+				7D0078B41ECC5A4C0026CF63 /* SupressionViewController.swift in Sources */,
+				7D0078B81ECC9A440026CF63 /* DiscussionViewController.swift in Sources */,
 				7D63D38B1EC997BD00FB5B3F /* ViewController.swift in Sources */,
-				7DB6C5111ECB0A01003FE8C9 /* TableViewCell1.swift in Sources */,
+				7DB6C51E1ECDCB4F003FE8C9 /* InfosViewController.swift in Sources */,
 				7D63505F1EC9FB48009D563E /* ContactsTableViewController.swift in Sources */,
 				7D63D3891EC997BD00FB5B3F /* AppDelegate.swift in Sources */,
+				7D0078B71ECC9A440026CF63 /* ContactViewController.swift in Sources */,
+				7DD47CB71ECB0CAA00CC9CE0 /* CompteViewController.swift in Sources */,
+				7D0078B21ECC5A4C0026CF63 /* DeconnexionViewController.swift in Sources */,
+				7DD47CB11ECB007D00CC9CE0 /* ParamViewController.swift in Sources */,
 				7D6350591EC9E157009D563E /* ThreeViewController.swift in Sources */,
-				7D63505D1EC9EE48009D563E /* CompteTableViewController.swift in Sources */,
-				7DB6C51B1ECB3DB1003FE8C9 /* TableViewCell3.swift in Sources */,
+				7DD47CAF1ECAEE0900CC9CE0 /* BlogViewController.swift in Sources */,
+				7D0078B31ECC5A4C0026CF63 /* MotdePasseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +649,7 @@
 		};
 		7D63D3AE1EC997BD00FB5B3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56B552AB631EBAB1401DFA71 /* Pods-TextingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TextingApp/Info.plist;
@@ -466,6 +662,7 @@
 		};
 		7D63D3AF1EC997BD00FB5B3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AECBFC58F60B84EAD0D01FCB /* Pods-TextingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TextingApp/Info.plist;
@@ -478,6 +675,7 @@
 		};
 		7D63D3B11EC997BD00FB5B3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEF0E37051C6FECD471B74FC /* Pods-TextingAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -492,6 +690,7 @@
 		};
 		7D63D3B21EC997BD00FB5B3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A5BC16CA38CDEA48F6432D8 /* Pods-TextingAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +705,7 @@
 		};
 		7D63D3B41EC997BD00FB5B3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACC82C0C0310C8EB28A94E95 /* Pods-TextingAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = TextingAppUITests/Info.plist;
@@ -519,6 +719,7 @@
 		};
 		7D63D3B51EC997BD00FB5B3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 557A4C5E3CA0164DA5BF2F9D /* Pods-TextingAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = TextingAppUITests/Info.plist;
