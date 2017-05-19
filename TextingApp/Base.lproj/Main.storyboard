@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,36 +25,23 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="liner-75-100-uni-piscines-hors-sol" translatesAutoresizingMaskIntoConstraints="NO" id="wib-9h-NrT">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entrez votre identifiant" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zkr-QU-hv9">
-                                <rect key="frame" x="90" y="76" width="195" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entrez votre identifiant" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zkr-QU-hv9">
+                                <rect key="frame" x="90" y="98" width="195" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entrez votre mot de passe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C3X-fR-LEH">
-                                <rect key="frame" x="90" y="129" width="195" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entrez votre mot de passe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C3X-fR-LEH">
+                                <rect key="frame" x="90" y="157" width="195" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHH-DD-g6R">
-                                <rect key="frame" x="142" y="195" width="91" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Connexion" backgroundImage="orange-rectangle-image293">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnConnexion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pU1-Fn-uJN"/>
-                                    <segue destination="FV2-EK-tJL" kind="presentation" id="vPs-sq-azp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayg-9c-rAV">
-                                <rect key="frame" x="142" y="249" width="91" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayg-9c-rAV">
+                                <rect key="frame" x="142" y="301" width="91" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="08O-pQ-mv5"/>
+                                </constraints>
                                 <state key="normal" title="Inscription" backgroundImage="orange-rectangle-image293">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -68,21 +56,57 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHH-DD-g6R">
+                                <rect key="frame" x="142" y="218" width="91" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="crW-9O-M0H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Connexion" backgroundImage="orange-rectangle-image293">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnConnexion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pU1-Fn-uJN"/>
+                                    <segue destination="FV2-EK-tJL" kind="presentation" id="vPs-sq-azp"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="orange-gecko-hi" translatesAutoresizingMaskIntoConstraints="NO" id="A3Z-El-Bh0">
+                                <rect key="frame" x="254" y="579" width="116" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="3mI-Kj-b3X"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="zkr-QU-hv9" firstAttribute="top" secondItem="Vm6-Fb-TUA" secondAttribute="bottom" constant="110" id="1yg-c9-PgG"/>
+                            <constraint firstItem="qHH-DD-g6R" firstAttribute="top" secondItem="C3X-fR-LEH" secondAttribute="bottom" constant="30" id="2Xo-oQ-UsS"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wib-9h-NrT" secondAttribute="bottom" id="7bB-TL-Id9"/>
+                            <constraint firstItem="Ayg-9c-rAV" firstAttribute="top" secondItem="qHH-DD-g6R" secondAttribute="bottom" constant="30" id="91S-pf-ptv"/>
+                            <constraint firstItem="qHH-DD-g6R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="145" id="A0o-H2-Z2r"/>
                             <constraint firstAttribute="trailing" secondItem="Vm6-Fb-TUA" secondAttribute="trailing" id="Ao0-Uq-7IA"/>
+                            <constraint firstAttribute="trailing" secondItem="A3Z-El-Bh0" secondAttribute="trailing" constant="5" id="Bl6-Zc-XTC"/>
                             <constraint firstItem="wib-9h-NrT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ByN-Og-3Im"/>
+                            <constraint firstItem="zkr-QU-hv9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="HjS-et-rtU"/>
                             <constraint firstItem="wib-9h-NrT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Hmc-Hg-dX9"/>
                             <constraint firstItem="wib-9h-NrT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Kwc-9Z-aeM"/>
+                            <constraint firstAttribute="trailing" secondItem="Ayg-9c-rAV" secondAttribute="trailing" constant="145" id="Lyf-hD-2D7"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wib-9h-NrT" secondAttribute="bottom" id="PJ9-b6-kFn"/>
                             <constraint firstAttribute="trailing" secondItem="wib-9h-NrT" secondAttribute="trailing" id="PPk-SD-VZb"/>
-                            <constraint firstItem="wib-9h-NrT" firstAttribute="top" secondItem="Vm6-Fb-TUA" secondAttribute="bottom" constant="-50" id="PfY-1D-fq1"/>
-                            <constraint firstItem="Vm6-Fb-TUA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="15" id="QQS-b3-hXn"/>
+                            <constraint firstItem="wib-9h-NrT" firstAttribute="top" secondItem="Vm6-Fb-TUA" secondAttribute="bottom" constant="-60" id="PfY-1D-fq1"/>
+                            <constraint firstItem="Vm6-Fb-TUA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="25" id="QQS-b3-hXn"/>
                             <constraint firstItem="wib-9h-NrT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Teb-TH-89a"/>
+                            <constraint firstAttribute="trailing" secondItem="qHH-DD-g6R" secondAttribute="trailing" constant="145" id="V6Y-Gn-0h3"/>
                             <constraint firstAttribute="trailing" secondItem="wib-9h-NrT" secondAttribute="trailing" id="VlY-Fh-62W"/>
                             <constraint firstItem="Vm6-Fb-TUA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VrF-Un-pWU"/>
+                            <constraint firstAttribute="trailing" secondItem="zkr-QU-hv9" secondAttribute="trailing" constant="50" id="YQP-EA-BcP"/>
+                            <constraint firstItem="C3X-fR-LEH" firstAttribute="top" secondItem="zkr-QU-hv9" secondAttribute="bottom" constant="30" id="ZcB-Oz-q55"/>
+                            <constraint firstAttribute="trailing" secondItem="C3X-fR-LEH" secondAttribute="trailing" constant="50" id="ewr-UR-aQk"/>
+                            <constraint firstItem="C3X-fR-LEH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="fLv-Ce-Na4"/>
+                            <constraint firstItem="A3Z-El-Bh0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="260" id="l6T-qd-t3v"/>
+                            <constraint firstItem="Ayg-9c-rAV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="145" id="vzC-bB-wO3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="A3Z-El-Bh0" secondAttribute="bottom" constant="5" id="zgq-N8-dMy"/>
                         </constraints>
                     </view>
                     <connections>
@@ -122,9 +146,12 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2P-TP-FTr">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2P-TP-FTr">
                                 <rect key="frame" x="62" y="168" width="63" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hRr-oX-ph4"/>
+                                    <constraint firstAttribute="width" constant="63" id="sQx-er-7A9"/>
+                                </constraints>
                                 <state key="normal" title="Compte" backgroundImage="orange-rectangle-image293">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -132,9 +159,12 @@
                                     <segue destination="J1g-Cu-esh" kind="show" id="Hfg-7Y-KPJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nd-MZ-mCC">
-                                <rect key="frame" x="244" y="168" width="77" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nd-MZ-mCC">
+                                <rect key="frame" x="235" y="168" width="77" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2l3-Xz-K4R"/>
+                                    <constraint firstAttribute="width" constant="63" id="cTt-Gh-aFj"/>
+                                </constraints>
                                 <state key="normal" title="Contacts" backgroundImage="orange-rectangle-image293">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -142,9 +172,8 @@
                                     <segue destination="XVt-Jg-jdY" kind="show" id="DyR-bY-pwn"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mW2-xh-05G">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mW2-xh-05G">
                                 <rect key="frame" x="62" y="75" width="250" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -158,21 +187,103 @@
                                     <segue destination="H9Y-zP-dgF" kind="show" id="shp-LI-sHC"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rechercher un contact :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQs-lO-dyb">
+                                <rect key="frame" x="62" y="237" width="184" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.31498441700000002" green="0.32128410530000001" blue="0.32128410530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FHE-WM-Dl8">
+                                <rect key="frame" x="62" y="274" width="215" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dV4-dh-fxh">
+                                <rect key="frame" x="30" y="382" width="314" height="117"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ajouter ce contact ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQy-H6-r6H">
+                                        <rect key="frame" x="38" y="8" width="154" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.31498441700000002" green="0.32128410530000001" blue="0.32128410530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Qo-DU-ZCB">
+                                        <rect key="frame" x="38" y="59" width="60" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="n2G-r4-e05"/>
+                                        </constraints>
+                                        <state key="normal" title="OUI" backgroundImage="orange-rectangle-image293">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQi-G1-yFQ">
+                                        <rect key="frame" x="215" y="59" width="62" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="QTS-zY-RUR"/>
+                                        </constraints>
+                                        <state key="normal" title="NON" backgroundImage="orange-rectangle-image293">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="4Qo-DU-ZCB" firstAttribute="leading" secondItem="dV4-dh-fxh" secondAttribute="leading" constant="38" id="Ehl-8t-hf9"/>
+                                    <constraint firstItem="fQy-H6-r6H" firstAttribute="leading" secondItem="dV4-dh-fxh" secondAttribute="leading" constant="38" id="Sre-kN-NSM"/>
+                                    <constraint firstItem="4Qo-DU-ZCB" firstAttribute="top" secondItem="fQy-H6-r6H" secondAttribute="bottom" constant="30" id="W2Q-UR-Y0T"/>
+                                    <constraint firstAttribute="top" secondItem="fQy-H6-r6H" secondAttribute="bottom" constant="-29" id="Ws1-md-Xnn"/>
+                                    <constraint firstItem="cQi-G1-yFQ" firstAttribute="top" secondItem="fQy-H6-r6H" secondAttribute="bottom" constant="30" id="ZBH-0i-kEW"/>
+                                    <constraint firstAttribute="trailing" secondItem="fQy-H6-r6H" secondAttribute="trailing" constant="122" id="bHL-5O-U69"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Qo-DU-ZCB" secondAttribute="trailing" constant="216" id="sOd-zk-17m"/>
+                                    <constraint firstAttribute="trailing" secondItem="cQi-G1-yFQ" secondAttribute="trailing" constant="38" id="v5u-q7-CUS"/>
+                                    <constraint firstItem="cQi-G1-yFQ" firstAttribute="leading" secondItem="dV4-dh-fxh" secondAttribute="leading" constant="214" id="wnf-Fe-wcW"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdJ-rr-odw">
+                                <rect key="frame" x="148" y="318" width="91" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gmt-PQ-KD7"/>
+                                </constraints>
+                                <state key="normal" title="Rechercher" backgroundImage="orange-rectangle-image293">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="g2P-TP-FTr" firstAttribute="leading" secondItem="3gD-RJ-koG" secondAttribute="leading" constant="50" id="1sG-3e-guO"/>
                             <constraint firstItem="g9D-Rt-vq4" firstAttribute="top" secondItem="fhq-6g-VUU" secondAttribute="bottom" constant="-50" id="4w6-vn-ayi"/>
+                            <constraint firstItem="g2P-TP-FTr" firstAttribute="top" secondItem="mW2-xh-05G" secondAttribute="bottom" constant="60" id="B3d-iI-Mv6"/>
+                            <constraint firstAttribute="trailing" secondItem="FHE-WM-Dl8" secondAttribute="trailing" constant="40" id="BXN-QY-B9z"/>
                             <constraint firstItem="g9D-Rt-vq4" firstAttribute="leading" secondItem="3gD-RJ-koG" secondAttribute="leading" id="BhV-8s-ggR"/>
-                            <constraint firstAttribute="trailing" secondItem="5uH-WR-qdZ" secondAttribute="trailing" id="Imr-Cn-h4L"/>
+                            <constraint firstItem="9nd-MZ-mCC" firstAttribute="top" secondItem="mW2-xh-05G" secondAttribute="bottom" constant="60" id="HaW-pn-DHi"/>
+                            <constraint firstItem="5uH-WR-qdZ" firstAttribute="top" secondItem="dV4-dh-fxh" secondAttribute="bottom" constant="130" id="IcB-Mg-vDG"/>
+                            <constraint firstAttribute="trailing" secondItem="5uH-WR-qdZ" secondAttribute="trailing" constant="-20" id="Imr-Cn-h4L"/>
+                            <constraint firstItem="FHE-WM-Dl8" firstAttribute="top" secondItem="fQs-lO-dyb" secondAttribute="bottom" constant="16" id="LcY-0f-zLF"/>
                             <constraint firstItem="5Qq-B8-oZE" firstAttribute="top" secondItem="g9D-Rt-vq4" secondAttribute="bottom" id="NcH-gT-wJW"/>
                             <constraint firstItem="fhq-6g-VUU" firstAttribute="leading" secondItem="3gD-RJ-koG" secondAttribute="leading" id="OqZ-8b-HUF"/>
                             <constraint firstItem="g9D-Rt-vq4" firstAttribute="top" secondItem="3gD-RJ-koG" secondAttribute="top" id="QUe-Zh-iqX"/>
+                            <constraint firstItem="fQs-lO-dyb" firstAttribute="top" secondItem="g2P-TP-FTr" secondAttribute="bottom" constant="39" id="ROO-2C-t0e"/>
                             <constraint firstAttribute="trailing" secondItem="g9D-Rt-vq4" secondAttribute="trailing" id="SQf-Tp-DUx"/>
+                            <constraint firstItem="rdJ-rr-odw" firstAttribute="leading" secondItem="3gD-RJ-koG" secondAttribute="leading" constant="140" id="Sqq-50-TM6"/>
+                            <constraint firstItem="dV4-dh-fxh" firstAttribute="leading" secondItem="3gD-RJ-koG" secondAttribute="leading" constant="30" id="eHl-rP-wc2"/>
+                            <constraint firstAttribute="trailing" secondItem="fQs-lO-dyb" secondAttribute="trailing" constant="40" id="i7X-kP-Spa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9nd-MZ-mCC" secondAttribute="trailing" constant="50" id="iH2-Td-dUf"/>
+                            <constraint firstItem="rdJ-rr-odw" firstAttribute="top" secondItem="FHE-WM-Dl8" secondAttribute="bottom" constant="14" id="jVO-kg-no5"/>
+                            <constraint firstAttribute="trailing" secondItem="mW2-xh-05G" secondAttribute="trailing" constant="40" id="kjm-fH-tbb"/>
                             <constraint firstItem="5Qq-B8-oZE" firstAttribute="top" secondItem="5uH-WR-qdZ" secondAttribute="bottom" id="l8N-bj-JrX"/>
+                            <constraint firstItem="fQs-lO-dyb" firstAttribute="leading" secondItem="3gD-RJ-koG" secondAttribute="leading" constant="40" id="lbw-6q-jRD"/>
                             <constraint firstAttribute="trailing" secondItem="fhq-6g-VUU" secondAttribute="trailing" id="leS-wW-cKZ"/>
                             <constraint firstItem="5uH-WR-qdZ" firstAttribute="top" secondItem="g9D-Rt-vq4" secondAttribute="bottom" constant="-50" id="n65-66-kaa"/>
-                            <constraint firstItem="5uH-WR-qdZ" firstAttribute="leading" secondItem="3gD-RJ-koG" secondAttribute="leading" id="o1o-ZQ-Zcn"/>
+                            <constraint firstItem="5uH-WR-qdZ" firstAttribute="leading" secondItem="3gD-RJ-koG" secondAttribute="leading" constant="-20" id="o1o-ZQ-Zcn"/>
+                            <constraint firstItem="mW2-xh-05G" firstAttribute="leading" secondItem="3gD-RJ-koG" secondAttribute="leading" constant="40" id="pRx-ud-oBR"/>
+                            <constraint firstItem="dV4-dh-fxh" firstAttribute="top" secondItem="rdJ-rr-odw" secondAttribute="bottom" constant="34" id="qcs-EQ-tYl"/>
                             <constraint firstItem="fhq-6g-VUU" firstAttribute="top" secondItem="3gD-RJ-koG" secondAttribute="top" constant="20" id="qv4-He-rlJ"/>
+                            <constraint firstAttribute="trailing" secondItem="rdJ-rr-odw" secondAttribute="trailing" constant="140" id="t4L-99-wX5"/>
+                            <constraint firstItem="FHE-WM-Dl8" firstAttribute="leading" secondItem="3gD-RJ-koG" secondAttribute="leading" constant="40" id="vwg-l9-X81"/>
+                            <constraint firstItem="mW2-xh-05G" firstAttribute="top" secondItem="fhq-6g-VUU" secondAttribute="bottom" constant="27" id="xQr-l6-heB"/>
+                            <constraint firstAttribute="trailing" secondItem="dV4-dh-fxh" secondAttribute="trailing" constant="30" id="zvi-3N-gcM"/>
                         </constraints>
                     </view>
                     <connections>
@@ -198,30 +309,24 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="liner-75-100-uni-piscines-hors-sol" translatesAutoresizingMaskIntoConstraints="NO" id="uN4-fZ-Iam">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entrez votre mot de passe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r23-Kt-2Lp">
-                                <rect key="frame" x="168" y="102" width="191" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entrez votre mot de passe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r23-Kt-2Lp">
+                                <rect key="frame" x="168" y="97" width="191" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mot de passe :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lch-Rf-8nM">
-                                <rect key="frame" x="33" y="106" width="127" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mot de passe :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lch-Rf-8nM">
+                                <rect key="frame" x="16" y="97" width="127" height="26"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qyl-Av-Erv">
-                                <rect key="frame" x="262" y="171" width="87" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Valider" backgroundImage="orange-rectangle-image293">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOa-7V-Bxt">
-                                <rect key="frame" x="33" y="171" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOa-7V-Bxt">
+                                <rect key="frame" x="20" y="165" width="86" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="bRm-08-4DT"/>
+                                    <constraint firstAttribute="height" constant="35" id="ygB-fX-CtF"/>
+                                </constraints>
                                 <state key="normal" title="Retour" backgroundImage="orange-rectangle-image293">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -236,17 +341,36 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qyl-Av-Erv">
+                                <rect key="frame" x="262" y="165" width="87" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="TCi-Pe-tyl"/>
+                                    <constraint firstAttribute="width" constant="80" id="dPr-iM-vfb"/>
+                                </constraints>
+                                <state key="normal" title="Valider" backgroundImage="orange-rectangle-image293">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="uN4-fZ-Iam" firstAttribute="top" secondItem="SdK-ax-xck" secondAttribute="top" id="41I-39-P3X"/>
                             <constraint firstItem="FV8-ux-sMt" firstAttribute="top" secondItem="uN4-fZ-Iam" secondAttribute="bottom" id="76P-9J-abj"/>
+                            <constraint firstItem="lch-Rf-8nM" firstAttribute="top" secondItem="GxA-ed-gBl" secondAttribute="bottom" constant="45" id="7xR-Ya-vUJ"/>
+                            <constraint firstItem="lch-Rf-8nM" firstAttribute="leading" secondItem="SdK-ax-xck" secondAttribute="leading" constant="20" id="80T-uc-5Ro"/>
+                            <constraint firstItem="lOa-7V-Bxt" firstAttribute="leading" secondItem="SdK-ax-xck" secondAttribute="leading" constant="20" id="BXC-n3-v3j"/>
+                            <constraint firstItem="lOa-7V-Bxt" firstAttribute="top" secondItem="lch-Rf-8nM" secondAttribute="bottom" constant="45" id="HWc-RH-iLG"/>
+                            <constraint firstItem="r23-Kt-2Lp" firstAttribute="top" secondItem="GxA-ed-gBl" secondAttribute="bottom" constant="40" id="KR9-MA-Zbh"/>
+                            <constraint firstItem="Qyl-Av-Erv" firstAttribute="top" secondItem="r23-Kt-2Lp" secondAttribute="bottom" constant="40" id="Os4-xp-zTI"/>
+                            <constraint firstItem="r23-Kt-2Lp" firstAttribute="leading" secondItem="lch-Rf-8nM" secondAttribute="trailing" constant="20" id="RwU-RD-JeU"/>
                             <constraint firstItem="GxA-ed-gBl" firstAttribute="leading" secondItem="SdK-ax-xck" secondAttribute="leading" id="Tfw-7E-V0F"/>
                             <constraint firstItem="uN4-fZ-Iam" firstAttribute="leading" secondItem="SdK-ax-xck" secondAttribute="leading" id="c1c-vi-ibY"/>
                             <constraint firstItem="uN4-fZ-Iam" firstAttribute="top" secondItem="GxA-ed-gBl" secondAttribute="bottom" constant="-60" id="fXU-I6-geH"/>
                             <constraint firstAttribute="trailing" secondItem="uN4-fZ-Iam" secondAttribute="trailing" id="hr2-xy-JBS"/>
+                            <constraint firstItem="Qyl-Av-Erv" firstAttribute="leading" secondItem="lOa-7V-Bxt" secondAttribute="trailing" constant="155" id="ihN-8Z-kbI"/>
                             <constraint firstAttribute="trailing" secondItem="GxA-ed-gBl" secondAttribute="trailing" id="pS6-I7-8HQ"/>
                             <constraint firstItem="GxA-ed-gBl" firstAttribute="top" secondItem="Z7s-Dm-8vQ" secondAttribute="bottom" id="qX0-pb-3GX"/>
+                            <constraint firstItem="r23-Kt-2Lp" firstAttribute="trailing" secondItem="SdK-ax-xck" secondAttribute="trailingMargin" id="rx2-gE-4ve"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -276,30 +400,47 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ebh-cK-05n">
-                                <rect key="frame" x="95" y="165" width="184" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ebh-cK-05n">
+                                <rect key="frame" x="96" y="168" width="184" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nouveau mot de passe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89Y-JU-aHM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nouveau mot de passe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89Y-JU-aHM">
                                 <rect key="frame" x="95" y="235" width="184" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.31498441700000002" green="0.32128410530000001" blue="0.32128410530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hr7-zl-OBA">
-                                <rect key="frame" x="95" y="264" width="184" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hr7-zl-OBA">
+                                <rect key="frame" x="95" y="272" width="184" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMY-lV-Q91">
-                                <rect key="frame" x="141" y="387" width="95" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Entrez à nouveau votre mot de passe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scx-PK-Tdi">
+                                <rect key="frame" x="45" y="315" width="285" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.31498441700000002" green="0.32128410530000001" blue="0.32128410530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TbY-UQ-1mk">
+                                <rect key="frame" x="95" y="360" width="184" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mot de passe actuel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qf8-ZF-DAK">
+                                <rect key="frame" x="105" y="128" width="164" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.31498441695879359" green="0.32128410529796947" blue="0.32128410529796947" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMY-lV-Q91">
+                                <rect key="frame" x="141" y="427" width="95" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qLh-zN-VgE"/>
+                                </constraints>
                                 <state key="normal" title="Valider" backgroundImage="orange-rectangle-image293">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -307,38 +448,38 @@
                                     <action selector="btnActionMdp:" destination="0qA-hU-yjq" eventType="touchUpInside" id="JeO-8m-AFP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Entrez à nouveau votre mot de passe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scx-PK-Tdi">
-                                <rect key="frame" x="45" y="315" width="285" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.31498441700000002" green="0.32128410530000001" blue="0.32128410530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TbY-UQ-1mk">
-                                <rect key="frame" x="95" y="344" width="184" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mot de passe actuel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qf8-ZF-DAK">
-                                <rect key="frame" x="105" y="122" width="164" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.31498441695879359" green="0.32128410529796947" blue="0.32128410529796947" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jqA-VB-byO" firstAttribute="leading" secondItem="x0n-a5-Lvi" secondAttribute="leading" id="0MX-yG-b25"/>
                             <constraint firstAttribute="trailing" secondItem="jqA-VB-byO" secondAttribute="trailing" id="3nk-82-Lba"/>
+                            <constraint firstAttribute="trailing" secondItem="Ebh-cK-05n" secondAttribute="trailing" constant="60" id="6Hw-ur-fem"/>
+                            <constraint firstItem="scx-PK-Tdi" firstAttribute="leading" secondItem="x0n-a5-Lvi" secondAttribute="leading" constant="60" id="8BF-w4-Dy9"/>
                             <constraint firstItem="Uzh-u1-J6K" firstAttribute="leading" secondItem="x0n-a5-Lvi" secondAttribute="leading" id="8cd-cK-Djl"/>
                             <constraint firstItem="mKi-gH-mPS" firstAttribute="top" secondItem="jqA-VB-byO" secondAttribute="bottom" id="9XS-6r-lQA"/>
+                            <constraint firstItem="89Y-JU-aHM" firstAttribute="top" secondItem="Ebh-cK-05n" secondAttribute="bottom" constant="30" id="I8C-XO-HQL"/>
                             <constraint firstItem="jqA-VB-byO" firstAttribute="top" secondItem="x0n-a5-Lvi" secondAttribute="top" id="IXe-gU-8Cv"/>
+                            <constraint firstAttribute="trailing" secondItem="Qf8-ZF-DAK" secondAttribute="trailing" constant="60" id="J2j-fv-Wjh"/>
+                            <constraint firstItem="Qf8-ZF-DAK" firstAttribute="leading" secondItem="x0n-a5-Lvi" secondAttribute="leading" constant="60" id="NfJ-Ej-Fhr"/>
                             <constraint firstAttribute="trailing" secondItem="Uzh-u1-J6K" secondAttribute="trailing" id="PPp-KW-zQn"/>
+                            <constraint firstItem="Qf8-ZF-DAK" firstAttribute="top" secondItem="Uzh-u1-J6K" secondAttribute="bottom" constant="30" id="Qxb-12-QXg"/>
+                            <constraint firstItem="CMY-lV-Q91" firstAttribute="top" secondItem="TbY-UQ-1mk" secondAttribute="bottom" constant="30" id="V9w-MR-z8N"/>
+                            <constraint firstItem="TbY-UQ-1mk" firstAttribute="leading" secondItem="x0n-a5-Lvi" secondAttribute="leading" constant="60" id="VjF-ni-XPV"/>
+                            <constraint firstAttribute="trailing" secondItem="89Y-JU-aHM" secondAttribute="trailing" constant="60" id="Xjw-cB-1Nd"/>
+                            <constraint firstItem="hr7-zl-OBA" firstAttribute="top" secondItem="89Y-JU-aHM" secondAttribute="bottom" constant="15" id="Z6X-u7-hvf"/>
+                            <constraint firstItem="Ebh-cK-05n" firstAttribute="leading" secondItem="x0n-a5-Lvi" secondAttribute="leading" constant="60" id="d8I-Sg-K1R"/>
+                            <constraint firstAttribute="trailing" secondItem="scx-PK-Tdi" secondAttribute="trailing" constant="60" id="eNt-Qq-Zmc"/>
                             <constraint firstItem="jqA-VB-byO" firstAttribute="top" secondItem="Uzh-u1-J6K" secondAttribute="bottom" constant="-100" id="gbw-ee-ETD"/>
+                            <constraint firstAttribute="trailing" secondItem="TbY-UQ-1mk" secondAttribute="trailing" constant="60" id="hNQ-GQ-emD"/>
+                            <constraint firstItem="CMY-lV-Q91" firstAttribute="leading" secondItem="x0n-a5-Lvi" secondAttribute="leading" constant="130" id="q1b-IS-Plf"/>
+                            <constraint firstAttribute="trailing" secondItem="hr7-zl-OBA" secondAttribute="trailing" constant="60" id="r5Q-Ns-f39"/>
                             <constraint firstItem="Uzh-u1-J6K" firstAttribute="top" secondItem="5xv-ph-ACv" secondAttribute="bottom" id="rRD-YZ-gFI"/>
+                            <constraint firstItem="89Y-JU-aHM" firstAttribute="leading" secondItem="x0n-a5-Lvi" secondAttribute="leading" constant="60" id="raJ-Cn-b7O"/>
+                            <constraint firstItem="Ebh-cK-05n" firstAttribute="top" secondItem="Qf8-ZF-DAK" secondAttribute="bottom" constant="15" id="slc-ra-wLe"/>
+                            <constraint firstItem="scx-PK-Tdi" firstAttribute="top" secondItem="hr7-zl-OBA" secondAttribute="bottom" constant="30" id="xUj-Io-Rzf"/>
+                            <constraint firstItem="hr7-zl-OBA" firstAttribute="leading" secondItem="x0n-a5-Lvi" secondAttribute="leading" constant="60" id="yCc-h8-fGZ"/>
+                            <constraint firstAttribute="trailing" secondItem="CMY-lV-Q91" secondAttribute="trailing" constant="130" id="yhM-ub-ELH"/>
+                            <constraint firstItem="TbY-UQ-1mk" firstAttribute="top" secondItem="scx-PK-Tdi" secondAttribute="bottom" constant="15" id="zH5-bF-91z"/>
                         </constraints>
                     </view>
                     <connections>
@@ -365,34 +506,36 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Paramètres" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wno-N7-53X">
-                                <rect key="frame" x="135" y="79" width="104" height="32"/>
+                                <rect key="frame" x="135" y="28" width="104" height="32"/>
                                 <color key="backgroundColor" red="1" green="0.4046527124" blue="0.029362251209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Double Authentification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02G-aN-pmU">
-                                <rect key="frame" x="35" y="143" width="180" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Double Authentification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02G-aN-pmU">
+                                <rect key="frame" x="32" y="148" width="180" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.31498441700000002" green="0.32128410530000001" blue="0.32128410530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="et1-i7-NZq">
-                                <rect key="frame" x="310" y="138" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="et1-i7-NZq">
+                                <rect key="frame" x="286" y="143" width="51" height="31"/>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Wno-N7-53X" firstAttribute="leading" secondItem="wOQ-MR-r3t" secondAttribute="leading" id="2Rd-UV-MWi"/>
+                            <constraint firstAttribute="trailing" secondItem="et1-i7-NZq" secondAttribute="trailing" constant="30" id="5cG-LK-TNp"/>
                             <constraint firstItem="nzI-aZ-ede" firstAttribute="top" secondItem="g0I-uf-t92" secondAttribute="bottom" id="838-9b-ljK"/>
                             <constraint firstAttribute="trailing" secondItem="Wno-N7-53X" secondAttribute="trailing" id="Cbg-AM-sQr"/>
                             <constraint firstItem="g0I-uf-t92" firstAttribute="top" secondItem="wOQ-MR-r3t" secondAttribute="top" id="Kf1-ea-OV5"/>
+                            <constraint firstItem="et1-i7-NZq" firstAttribute="top" secondItem="Wno-N7-53X" secondAttribute="bottom" constant="83" id="LqC-po-HTN"/>
+                            <constraint firstItem="02G-aN-pmU" firstAttribute="top" secondItem="Wno-N7-53X" secondAttribute="bottom" constant="90" id="TgL-lY-jFg"/>
                             <constraint firstItem="g0I-uf-t92" firstAttribute="leading" secondItem="wOQ-MR-r3t" secondAttribute="leading" id="biU-hm-mwZ"/>
                             <constraint firstAttribute="trailing" secondItem="g0I-uf-t92" secondAttribute="trailing" id="khP-nW-84o"/>
+                            <constraint firstItem="02G-aN-pmU" firstAttribute="leading" secondItem="wOQ-MR-r3t" secondAttribute="leading" constant="30" id="nDo-Yt-xyg"/>
                             <constraint firstItem="Wno-N7-53X" firstAttribute="top" secondItem="dCw-v6-FqJ" secondAttribute="bottom" id="rdC-0k-dIv"/>
-                            <constraint firstItem="g0I-uf-t92" firstAttribute="top" secondItem="Wno-N7-53X" secondAttribute="bottom" constant="-120" id="xJz-oT-Bfj"/>
+                            <constraint firstItem="g0I-uf-t92" firstAttribute="top" secondItem="Wno-N7-53X" secondAttribute="bottom" constant="-110" id="xJz-oT-Bfj"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -460,35 +603,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="34" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rwl-ue-56U">
-                                <rect key="frame" x="16" y="64" width="343" height="551"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="34" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rwl-ue-56U">
+                                <rect key="frame" x="0.0" y="64" width="375" height="551"/>
+                                <color key="backgroundColor" red="0.6399461031" green="0.84540289639999999" blue="0.97071117159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexColor" red="0.31498441700000002" green="0.32128410530000001" blue="0.32128410530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.6399461031" green="0.84540289639999999" blue="0.97071117159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TextCell" textLabel="f1S-N8-eaI" rowHeight="34" style="IBUITableViewCellStyleDefault" id="5Ro-cl-0gl">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="34"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="34"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Ro-cl-0gl" id="paR-9j-1B7">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="33"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="33"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f1S-N8-eaI">
-                                                    <rect key="frame" x="15" y="0.0" width="313" height="33"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="33"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="backgroundColor" red="0.6399461031" green="0.84540289639999999" blue="0.97071117159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.31498441700000002" green="0.32128410530000001" blue="0.32128410530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.6399461031" green="0.84540289639999999" blue="0.97071117159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
+                                        <color key="tintColor" red="0.6399461030960083" green="0.84540289640426636" blue="0.97071117162704468" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AWm-wA-v57" firstAttribute="top" secondItem="rwl-ue-56U" secondAttribute="bottom" id="DKE-Oe-hpy"/>
+                            <constraint firstItem="rwl-ue-56U" firstAttribute="top" secondItem="rh0-Ff-IwW" secondAttribute="bottom" id="VPs-0c-MVB"/>
+                            <constraint firstItem="rwl-ue-56U" firstAttribute="leading" secondItem="Uc6-SU-AQx" secondAttribute="leading" id="lLP-gu-Oyz"/>
+                            <constraint firstAttribute="trailing" secondItem="rwl-ue-56U" secondAttribute="trailing" id="rCc-gJ-xwz"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="ukU-0K-5qj">
+                        <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" style="plain" id="QiY-Yf-4Oh">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="X0t-hX-oVt">
                                 <rect key="frame" x="16" y="7" width="83" height="30"/>
@@ -509,7 +663,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="blD-fw-G8e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="932" y="2391"/>
+            <point key="canvasLocation" x="932" y="2390.5547226386807"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DZw-HV-IIh">
@@ -545,23 +699,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Informations et mentions légales" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLR-TW-Yr8">
-                                <rect key="frame" x="56" y="28" width="263" height="57"/>
+                                <rect key="frame" x="56" y="9" width="263" height="57"/>
                                 <color key="backgroundColor" red="1" green="0.4046527124" blue="0.029362251209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="92x-eq-oMH">
-                                <rect key="frame" x="56" y="105" width="253" height="266"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
-                                <color key="textColor" red="0.20229200103264658" green="0.20429489213197971" blue="0.20429489213197971" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjo-HR-nBD">
-                                <rect key="frame" x="56" y="385" width="68" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjo-HR-nBD">
+                                <rect key="frame" x="153" y="600" width="68" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="fA8-AU-86u"/>
+                                </constraints>
                                 <state key="normal" title="Retour" backgroundImage="orange-rectangle-image293">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -569,15 +717,135 @@
                                     <segue destination="FV2-EK-tJL" kind="show" id="84o-C6-u1A"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="black" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qW0-UC-nHm">
+                                <rect key="frame" x="29" y="102" width="323" height="481"/>
+                                <color key="backgroundColor" red="0.6399461031" green="0.84540289639999999" blue="0.97071117159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Identification de l'entité éditrice :      
+                   
+Nom : HARM
+Forme juridique : Société Anonyme à Responsabilité Limité
+Capital de la société : 152 000 256€
+Siège social : 6 Place Charles Hernu, 69100 Villeurbanne
+Siren : RCS LYON 344 283 800
+Nº de TVA intracommunautaire : FR51384145289
+Président(e)s du Directoire : Aymeric LU, Haoua SOUAMIA ,  Richard BOLLET, Mylène MANIKAS
+
+Hébergement :    
+                                    
+GIE Federal Service
+Forme juridique : Groupement d’Intérêt Economique régi par l’ordonnance du 23 septembre 1967
+Siège social : 1 rue Louis Michou, 29480 LIEGE
+Siren : 322 542 587 RCS Brest
+Président : Gabriel Lansonneur   
+           
+Confidentialité des données :   
+  
+L'accès a l’application HARM est soumis à des conditions d'utilisation spécifiques mentionnées dans le présent AVERTISSEMENT LEGAL. En naviguant sur cette application, tout internaute accepte de se conformer aux conditions ci-après définies, que HARM se réserve le droit de modifier à tout moment.
+HARM se réserve le droit de modifier, suspendre ou mettre fin à tout service ou produit mis ou disponible en ligne.
+Les conditions d’utilisation du site et l’avertissement légal étant régulièrement mis à jour par HARM. HARM invite tout internaute à consulter régulièrement ces derniers. Les versions en vigueur des conditions d’utilisation de l’application et de l’avertissement légal sont opposables à tout internaute de l’application.
+Certaines informations contenues dans cette application ne constituent aucunement des offres commerciales de produits ou de services. Le contenu des pages, diffusé à titre purement informatif, ne saurait donc engager la responsabilité de l'éditeur de l’application. 
+
+Les textes, photos, images, dessins et sons, et plus généralement l'ensemble des éléments contenus dans l’application sont protégés par le droit d'auteur. Toute reproduction, partielle ou totale, est strictement interdite.
+HARM souhaite attirer l'attention des utilisateurs et clients sur les points suivants :
+	•	les informations contenues sur l’application, les services, produits et titres financiers peuvent ne pas être exhaustives ou ne pas leur convenir ou leur être adaptés. Les stratégies décrites ne sont pas toujours appropriées. Les opinions exprimées sur ce site ne représentent en aucun cas un conseil d'investissement. En cas de doute ou de questionnement, HARM recommande de recourir aux services d'un conseil indépendant ;
+	•	la valeur et le rendement des produits et titres financiers mentionnés sur cette application peuvent augmenter ou diminuer. Il existe par conséquent un risque de perdre tout ou partie du montant investi. De même, les performances passées d'un instrument financier ou d'un type d'instrument financier ne préjugent pas de leurs performances futures.
+HARM peut mettre fin à tout moment à l’accès a l’application, sur simple notification, suite à un quelconque manquement aux présentes conditions par un client. HARM ne saurait voir sa responsabilité engagée dans l'éventualité d'une telle décision. Les notifications peuvent être adressées par tout moyen, y compris par la messagerie de l’application de HARM.
+
+La loi applicable est la loi française, la langue utilisée est la langue française et les tribunaux compétents sont les tribunaux français.          
+
+Conditions d'utilisation :   
+       
+Propriété du site ; acceptation des conditions d'utilisation
+Les présentes conditions générales d'utilisation (les « Conditions d'utilisation ») s'appliquent au site web d'Apple sis à l'adresse www.apple.com et à tous les sites associés liés au site www.apple.com par Apple, ses filiales et sociétés affiliées, dans le monde entier (collectivement désignés par le terme le « Site »). Le Site est la propriété d'Apple Inc. (« Apple ») et de ses concédants. EN UTILISANT LE SITE, VOUS ACCEPTEZ LES PRÉSENTES CONDITIONS D'UTILISATION ; SI VOUS NE LES ACCEPTEZ PAS, VEUILLEZ NE PAS UTILISER LE SITE.
+Apple se réserve le droit, à sa seule discrétion et à tout moment, de changer, modifier, compléter ou supprimer des parties de ces Conditions d'utilisation. Il est de votre responsabilité de consulter périodiquement ces Conditions d'utilisation pour voir si des modifications y ont été apportées. Si vous continuez à utiliser le Site après publication des modifications apportées, cela signifiera que vous acceptez lesdites modifications. Tant que vous vous conformez aux présentes Conditions d'utilisation, Apple vous accorde un droit personnel limité, non exclusif et non cessible d'accès au Site et d'utilisation du Site.
+Contenu
+L'ensemble des textes, graphiques, interfaces utilisateur, interfaces visuelles, photographies, marques commerciales, logos, sons, musiques, illustrations et codes informatiques (collectivement désignés par le terme le « Contenu »), notamment le design, la structure, la sélection, la coordination, l'expression, l'aspect et la convivialité, la présentation et l'agencement de ce Contenu, figurant sur le Site est détenu, contrôlé ou cédé sous licence par ou à Apple, et est protégé par la législation sur l'habillage commercial, les droits d'auteur, les brevets et les marques, et diverses autres lois applicables en matière de propriété intellectuelle et de concurrence déloyale.
+Sauf mention expresse figurant dans les présentes Conditions d'utilisation, aucune section du Site ni aucun Contenu ne peuvent être copiés, reproduits, republiés, téléchargés, publiés, exposés en public, encodés, traduits, transmis ou diffusés de quelque façon que ce soit (y compris par « écriture miroir ») sur un autre ordinateur, serveur, site web ou support de publication ou de diffusion, ou pour quelque entreprise commerciale que ce soit, sans l'accord écrit préalable d'Apple.
+Vous pouvez utiliser les informations sur les produits et les services Apple (telles que les fiches techniques, les articles de la base de connaissances et informations similaires) mis à disposition à dessein par Apple en vue de leur téléchargement, dans la mesure où (1) vous ne supprimez pas les avis de droits d'auteur sur les copies de ces documents, (2) vous utilisez ces informations pour votre usage personnel et à des fins non commerciales et vous ne copiez pas et ne publiez pas ces informations sur un ordinateur en réseau et vous ne les diffusez pas dans quelque média que ce soit, (3) vous n'apportez pas de modifications à ces informations et (4) vous n'accordez aucun engagement ni aucune garantie quant à la teneur de ces documents.
+Utilisation du Site
+Vous n'êtes pas autorisé à utiliser des dispositifs, programmes, algorithmes ou autres méthodes automatiques de type « lien profond », « gratte-pages », « robot » ou « araignée », ou tout autre processus manuel similaire ou équivalent, pour accéder à, acquérir, copier ou surveiller toute partie du Site ou du Contenu, ni à reproduire ou contourner la structure navigationnelle ou la présentation du Site ou du Contenu pour vous procurer ou essayer de vous procurer des données, des documents ou des informations par des moyens non mis à dessein à votre disposition par le biais du Site. Apple se réserve le droit d'interdire ce type d'activité.
+Vous ne devez pas essayer d'accéder de façon illicite à toute section ou fonctionnalité du Site, ni à tout autre système ou réseau connecté au Site ou à un serveur Apple, ni aux services offerts sur ou par l'intermédiaire du Site, par piratage informatique, « reniflage » de mots de passe ou tout autre moyen illégitime.
+Vous ne devez pas essayer de sonder, d'analyser ou de tester la vulnérabilité du Site ou de tout réseau connecté au Site, ni enfreindre les mesures de sécurité et d'authentification mises en place sur le Site ou les réseaux connectés au Site. Vous n'êtes pas autorisé à rétro-interroger, tracer ou essayer de tracer les informations sur les autres utilisateurs ou visiteurs du Site, ou les autres clients d'Apple, notamment tout compte Apple dont vous n'êtes pas le détenteur ou sa source, ni à exploiter le Site ou les services ou les informations mis à disposition ou offerts sur ou via le Site, de quelque manière que ce soit, dans le but de révéler ces informations, notamment les informations d'identification personnelles ou les informations autres que vos propres informations, telles qu'elles apparaissent sur le Site.
+Vous vous engagez à ne prendre aucune mesure qui imposerait une charge excessive ou déraisonnable sur l'infrastructure du Site ou des systèmes ou des réseaux d'Apple, ou de tout système ou réseau connecté au Site ou à Apple.
+Vous vous engagez à n'utiliser aucun dispositif, logiciel ou sous-programme pour interférer ou essayer d'interférer sur le bon fonctionnement du Site ou de toute transaction conduite sur le Site ou sur l'utilisation du Site par toute autre personne.
+Vous ne devez pas essayer de contrefaire les en-têtes ou manipuler les identifiants de quelque manière que ce soit pour déguiser l'origine d'un message ou d'une transmission envoyé à Apple sur ou via le Site, ou d'un service offert sur ou via le Site. Vous ne devez pas prétendre être ou représenter quelqu'un d'autre, ni vous faire passer pour une autre entité physique ou morale.
+Vous ne devez pas utiliser le Site ou son Contenu dans un dessein illicite ou prohibé par les présentes Conditions d'utilisation, ni en vue d'encourager toute activité illégale ou autre portant atteinte aux droits d'Apple ou de tiers.
+Achats ; autres conditions générales
+Des conditions générales annexes pourront s'appliquer à des achats de biens ou de services, ainsi qu'à des sections ou fonctionnalités spécifiques du Site, notamment les concours, promotions et autres offres similaires, lesdites conditions étant intégrées aux présentes Conditions d'utilisation à titre de référence. Vous acceptez de vous conformer à ces conditions générales annexes, en confirmant notamment le cas échéant avoir l'âge légal requis pour utiliser ou participer au service ou à l'offre concerné. En cas de contradiction entre les présentes Conditions d'utilisation et les conditions publiées pour, ou applicables à une section spécifique du Site ou pour un service offert sur ou via le Site, ces dernières conditions prévaudront et régiront l'utilisation de cette section du Site ou de ce service spécifique.
+Le cas échéant, les obligations d'Apple vis-à-vis de ses produits et services sont régies uniquement par les conventions aux termes desquelles elles ont été définies et aucun élément figurant sur ce Site ne saurait être interprété de façon à modifier ces conventions.
+Apple pourra apporter des changements aux produits et services offerts sur le Site ou aux prix applicables à ces produits et services à tout moment et sans préavis. Les informations publiées sur le Site concernant des produits et des services peuvent être obsolètes, et Apple ne s'engage nullement à mettre à jour les informations publiées sur le Site relatives à ces produits et services.
+Les conditions générales ci-après concernent et régissent également l'utilisation du Site, et sont incorporées ici à titre de référence :
+		Informations relatives aux marques commerciales
+		Informations relatives aux droits d'auteur
+		    Droits et autorisations
+		    Actions en violation de droits d'auteur
+		Lutte contre le piratage
+		    Signaler un acte de piratage
+		Politique d'Apple en matière de soumission d'idées non sollicitées
+		Informations sur les licences de logiciels
+		Contacts juridiques
+Les règles et politiques énoncées pourront être modifiées de temps en temps et seront applicables dès la publication de ces modifications sur le Site.
+Comptes, mots de passe et sécurité
+Certains services et fonctionnalités offerts sur ou via le Site peuvent nécessiter l'ouverture d'un compte (y compris la configuration d'un identifiant Apple et d'un mot de passe). Vous avez l'entière responsabilité de préserver la confidentialité des informations relatives à votre compte, notamment votre mot de passe, et de toutes les opérations effectuées sous votre compte. Vous vous engagez à prévenir Apple immédiatement en cas d'utilisation non autorisée de votre compte ou de votre mot de passe, ou de toute violation de la sécurité. Toutefois, vous pourrez être tenu pour responsable des préjudices subis par Apple ou par tout autre utilisateur ou visiteur du Site dû à l'utilisation de votre identifiant Apple, votre mot de passe ou votre compte par une autre personne.
+Vous n'êtes pas autorisé à utiliser l'identifiant Apple, le mot de passe ou le compte d'une autre personne, à quelque moment que ce soit, sans l'autorisation et l'accord explicites du détenteur de cet identifiant Apple, de ce mot de passe ou de ce compte. Apple ne pourra être tenue pour responsable des préjudices découlant de votre manquement à respecter ces obligations.
+Confidentialité
+L'Engagement de confidentialité d'Apple s'applique à l'utilisation de ce Site, et ses conditions sont intégrées aux présentes Conditions d'utilisation à titre de référence. Pour consulter l'Engagement de confidentialité d'Apple, cliquez ici. En outre, en utilisant ce Site, vous reconnaissez et acceptez le fait que les transmissions via Internet ne sont jamais totalement confidentielles et sûres. Vous comprenez le fait que tout message ou toute information que vous transmettez au Site peut être lu ou intercepté par d'autres, même si un avis spécial précise qu'une transmission donnée (coordonnées de carte bancaire, par exemple) est chiffrée.
+Liens vers d'autres sites et vers le site Apple
+Ce Site peut contenir des liens vers d'autres sites web tiers indépendants (les « Sites liés »). Ces Sites liés sont indiqués uniquement à titre de commodité pour nos visiteurs. Ces Sites liés ne sont pas sous le contrôle d'Apple, et Apple n'est pas responsable et n'avalise pas le contenu de ces Sites liés, y compris des informations qui y sont publiées. Vous devrez vous faire votre propre jugement concernant vos interactions avec ces Sites liés.
+Exclusions de garantie
+APPLE NE GARANTIT PAS QUE LE SITE OU SON CONTENU OU LES SERVICES ET FONCTIONNALITÉS OFFERTS SUR LE SITE SERONT EXEMPTS D'ERREURS OU ACCESSIBLES DE FAÇON ININTERROMPUE, QUE LES DÉFAUTS ÉVENTUELS SERONT CORRIGÉS, NI QUE L'UTILISATION DU SITE PRODUIRA DES RÉSULTATS SPÉCIFIQUES. LE SITE ET SON CONTENU SONT FOURNIS SUR UNE BASE « EN L'ÉTAT » ET « SOUS RÉSERVE DE DISPONIBILITÉ ». TOUTES LES INFORMATIONS FOURNIES SUR LE SITE SONT SUSCEPTIBLES D'ÊTRE MODIFIÉES SANS PRÉAVIS. APPLE NE PEUT GARANTIR QUE LES FICHIERS ET LES DONNÉES QUE VOUS TÉLÉCHARGEZ DEPUIS LE SITE SERONT EXEMPTS DE VIRUS, DE CONTAMINATION OU DE FONCTIONNALITÉS MALVEILLANTES. APPLE REJETTE TOUTE FORME DE GARANTIE, EXPLICITE OU IMPLICITE, NOTAMMENT TOUTE GARANTIE D'EXACTITUDE, DE NON-CONTREFAÇON, DE QUALITÉ MARCHANDE OU D'ADAPTATION À UN USAGE PARTICULIER. APPLE REJETTE ÉGALEMENT TOUTE RESPONSABILITÉ AU REGARD DES ACTES, DES OMISSIONS OU DU COMPORTEMENT DE TIERS EN CONNEXION OU ASSOCIÉS AVEC VOTRE UTILISATION DU SITE ET/OU DE SERVICES APPLE. VOUS ASSUMEZ L'ENTIÈRE RESPONSABILITÉ QUANT À VOTRE UTILISATION DU SITE ET DES SITES LIÉS. VOTRE SEUL RECOURS CONTRE APPLE EN CAS DE MÉCONTENTEMENT AU REGARD DU SITE OU D'UN CONTENU EST D'ARRÊTER D'UTLISER LE SITE OU LE CONTENU EN QUESTION. CETTE LIMITATION DE MESURE RÉPARATOIRE FAIT PARTIE DE LA TRANSACTION ENTRE LES PARTIES.
+Les exclusions de garantie ci-dessus concernent l'ensemble des dommages, pertes ou préjudices dus à tout défaut d'exécution, erreur, omission, interruption, suppression, défaut, retard d'exécution ou de transmission, virus informatique, rupture de ligne de communication, vol, destruction, accès illicite ou utilisation, que ce soit pour rupture de contrat, faute professionnelle, négligence ou toute autre cause d'action.
+Apple se réserve le droit d'effectuer l'une des actions suivantes à tout moment et sans préavis : (1) modifier, suspendre ou bloquer le fonctionnement ou l'accès à tout ou partie du Site, pour quelque motif que ce soit ; (2) modifier tout ou partie du Site et toutes règles ou conditions applicables ; (3) interrompre le fonctionnement de tout ou partie du site, à des fins de maintenance périodique ou non, de correction d'erreurs ou de modifications.
+Limitation de responsabilité
+Dans la mesure autorisée par la loi, Apple ne pourra en aucun cas être tenue pour responsable en cas de dommages indirects, exemplaires, accessoires ou punitifs, y compris de toute perte de bénéfice, même si Apple a été prévenue de l'éventualité de tels dommages.
+Si, nonobstant les autres dispositions des présentes Conditions d'utilisation, Apple était tenue pour responsable de dommages ou de préjudices que vous auriez subis des conséquences de, ou en rapport avec l'utilisation du Site ou de tout Contenu, la responsabilité d'Apple ne pourrait en aucun cas être engagée pour un montant supérieur (1) au total des droits d'abonnement ou droits similaires associés à l'utilisation d'un service ou d'une fonctionnalité du Site payés au cours des six mois précédant la date de la plainte initiale portée contre Apple (à l'exclusion du prix d'achat de tout produit matériel ou logiciel Apple ou de tout programme AppleCare ou programme d'assistance similaire) ou (2) à 100,00 USD. Certaines juridictions n'autorisant pas les limites de responsabilité, il se peut que la limitation susmentionnée ne vous concerne pas.
+Indemnisation
+Vous vous engagez à indemniser et à dégager de toute responsabilité Apple, ses dirigeants, administrateurs, actionnaires, prédécesseurs, successeurs, employés, agents, filiales et sociétés affiliées au regard de toute demande, perte, responsabilité financière, réclamation ou dépense (y compris les frais juridiques) résultant d'actions lancées par des tiers à l'encontre d'Apple dues à, ou en rapport avec votre utilisation du Site.
+Infraction aux présentes conditions d'utilisation
+Apple pourra divulguer les informations que nous détenons sur vous (y compris votre identité) si nous déterminons qu'une telle divulgation est nécessaire en connexion avec une enquête ou une plainte concernant votre utilisation du Site, ou pour identifier, contacter ou poursuivre une personne soupçonnée de porter préjudice aux, ou d'interférer avec, volontairement ou non, les droits ou la propriété d'Apple ou avec les droits ou la propriété de visiteurs ou d'utilisateurs du Site, y compris les clients d'Apple. Apple se réserve le droit, à tout moment, de divulguer toutes les informations jugées nécessaires pour se conformer à la loi, la réglementation, la voie judiciaire ou une requête du gouvernement. Apple pourra également divulguer vos informations si nous déterminons que la loi en vigueur requiert ou autorise cette divulgation, notamment dans le cadre d'échange d'informations avec d'autres sociétés et organisations à des fins de protection contre la fraude.
+Vous reconnaissez et acceptez le fait qu'Apple pourra conserver les informations transmises ou communiquées par vous à Apple par l'intermédiaire du Site ou des services offerts sur ou via le Site, et pourra divulguer ces informations dans la mesure où la loi l'exige ou si Apple détermine qu'une telle conservation ou divulgation est raisonnablement nécessaire pour (1) se conformer à la voie du droit, (2) faire appliquer les présentes, (3) réagir à des plaintes pour violation des droits d'autres personnes par ces données, ou (4) protéger les droits, la propriété et la sécurité d'Apple, de ses employés, des utilisateurs et des visiteurs du site, et du public.
+Vous convenez du fait qu'Apple pourra, à sa seule discrétion et sans préavis, résilier votre droit d'accès au Site et/ou vous empêcher d'accéder au Site à l'avenir s'il est déterminé que vous n'avez pas respecté les présentes Conditions d'utilisation ou d'autres accords ou directives éventuellement associés à l'utilisation du Site. Vous convenez également du fait que toute infraction aux présentes Conditions d'utilisation constituera une pratique commerciale illégale et déloyale, et causera un préjudice irréparable à Apple au regard duquel des dommages-intérêts monétaires seraient inadéquats, et qu'Apple pourra obtenir toute mesure de redressement par voie d'injonction ou en Équité considérée comme nécessaire ou appropriée eu égard aux circonstances. Ces mesures de redressement s'entendent en complément des autres voies de recours d'Apple.
+Vous convenez du fait qu'Apple pourra, à sa seule discrétion et sans préavis, résilier votre droit d'accès au Site pour un motif déterminé, notamment (1) sur demande d'un organisme d'application de la loi ou d'un autre organisme public, (2) à votre demande (suppression de compte sur demande), (3) en cas d'interruption ou de modification importante du Site ou d'un service offert sur ou via le Site, ou (4) en cas de problèmes techniques inattendus.
+Si Apple entame des poursuites judiciaires à votre encontre des suites d'une infraction par vous aux présentes Conditions d'utilisation, Apple aura le droit de se faire rembourser par vous, et vous acceptez de payer, les honoraires d'avocat et les frais ainsi encourus, en plus des autres réparations accordées à Apple. Vous convenez du fait qu'Apple ne pourra être tenue pour responsable à votre égard ou à l'égard d'un tiers pour votre résiliation du droit d'accès au Site des suites d'une infraction aux présentes Conditions d'utilisation.
+Droit applicable ; résolution des litiges
+Vous convenez du fait que toute matière associée à votre accès ou votre utilisation du Site, y compris les litiges éventuels, sera régie par les lois des États-Unis et par les lois de l'État de Californie, indépendamment des dispositions en matière de conflit des lois. Vous reconnaissez la compétence du tribunal d'État et du tribunal fédéral du comté de Santa Clara, Californie, et renoncez à toute objection quant à cette compétence. Toute réclamation aux termes des présentes Conditions d'utilisation doit être portée dans un délai d'un (1) an à compter de l'occurrence de la cause d'action, après quoi il y aura prescription. Aucun dommage-intérêt autre que les débours ne pourra être recouvré ou perçu, étant entendu que la partie gagnante pourra être remboursée des frais et honoraires d'avocat encourus. En cas de controverse ou de litige entre vous et Apple découlant de, ou en rapport avec votre utilisation du Site, les parties devront essayer de résoudre ce litige rapidement et de bonne foi. En cas d'incapacité à résoudre ce litige dans un délai raisonnable (qui ne pourra dépasser trente (30) jours), l'une ou l'autre partie pourra soumettre ledit litige à médiation. En cas d'incapacité à résoudre le litige par le biais de la médiation, les parties seront alors libres d'exercer les droits ou les voies de recours à leur disposition aux termes de la loi en vigueur.
+Nullité en cas d'interdiction
+Apple administre et exploite le Site www.apple.com à partir de ses bureaux de Cupertino en Californie, États-Unis ; les autres sites Apple peuvent être administrés et exploités depuis divers emplacements en dehors des États-Unis. Bien que le Site soit accessible partout dans le monde, l'ensemble des fonctionnalités, produits et services mentionnés, référencés, fournis ou offerts sur ou via le Site ne sont pas accessibles à toutes les personnes ou dans toutes les zones géographiques, ou appropriés ou disponibles pour une utilisation en dehors des États-Unis. Apple se réserve le droit de limiter, à sa seule discrétion, la fourniture et la quantité de toute fonctionnalité, produit ou service mis à disposition de toute personne ou zone géographique. Toute offre de fonctionnalité, de produit ou de service faite sur le Site est nulle et non avenue dans les pays où elle est interdite. Si vous choisissez d'accéder au Site depuis un emplacement situé en dehors des États-Unis, vous le faites à votre propre initiative et il est de votre seule responsabilité de vous conformer aux lois locales en vigueur.
+Divers
+Vous n'êtes pas autorisé à utiliser, exporter ou réexporter tout Contenu ou toute copie ou adaptation de ce Contenu, ou tout produit ou service offert sur le Site, en infraction aux lois ou règlements applicables, notamment les lois et les règlements sur le contrôle à l'exportation des États-Unis.
+Si des dispositions des présentes Conditions d'utilisation étaient considérées comme nulles ou inapplicables par une cour de justice ou un autre tribunal de la juridiction compétente, ces dispositions devront être limitées ou supprimées, dans la mesure minimale nécessaire, et remplacées par des dispositions valables qui expriment mieux l'intention de ces Conditions d'utilisation de façon à ce qu'elles restent pleinement applicables. Les présentes Conditions d'utilisation constituent la globalité de l'accord entre vous et Apple concernant l'utilisation du Site, et les autres accords écrits ou oraux existant précédemment entre vous et Apple concernant cette utilisation sont annulés et remplacés par les présentes. Apple n'acceptera aucune contre-proposition relative à ces Conditions d'utilisation, et toutes les propositions de cette nature sont catégoriquement rejetées aux termes des présentes. Tout manquement d'Apple à insister sur, ou à imposer un strict respect des présentes Conditions d'utilisation ne pourra être interprété comme une renonciation par Apple à toute disposition ou tout droit dont Apple dispose pour faire appliquer ces Conditions d'utilisation. De même, le cours des relations entre Apple et vous ou un tiers ne pourra être interprété comme modifiant les dispositions des présentes Conditions d'utilisation. Les présentes Conditions d'utilisation ne pourront être interprétées comme conférant des droits ou des voies de recours à un tiers.
+Les sites d'Apple donnent accès à des données internationales d'Apple et peuvent, par conséquent, contenir des références ou des références croisées à des produits, programmes et services Apple qui n'ont pas été annoncés dans votre pays. De telles références n'impliquent pas qu'Apple compte annoncer la sortie de ces produits, programmes et services dans votre pays.
+Commentaires et informations
+Tous les commentaires que vous nous faites parvenir sur le Site seront considérés comme non confidentiels. Apple sera libre d'utiliser ces informations sans aucune restriction.
+Les informations contenues sur ce site web sont susceptibles d'être modifiées sans préavis.
+Copyright © 1997-2007 Apple Inc. Tous droits réservés.
+Apple Inc. 1 Infinite Loop, Cupertino, CA 95014, États-Unis
+Mis à jour par l'équipe du service juridique d'Apple le 11/01/07            
+
+License logicielle et composants :       
+
+
+</string>
+                                <color key="textColor" red="0.31498441700000002" green="0.32128410530000001" blue="0.32128410530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="OLR-TW-Yr8" firstAttribute="top" secondItem="GUQ-Op-pYA" secondAttribute="bottom" id="8Gu-E0-UUd"/>
+                            <constraint firstItem="fjo-HR-nBD" firstAttribute="leading" secondItem="oN3-A3-QBH" secondAttribute="leading" constant="150" id="9gI-Ml-5Bb"/>
                             <constraint firstItem="GbK-Lo-OmQ" firstAttribute="top" secondItem="oN3-A3-QBH" secondAttribute="top" id="CDE-9J-CPp"/>
+                            <constraint firstItem="Ivg-FZ-lEW" firstAttribute="top" secondItem="fjo-HR-nBD" secondAttribute="bottom" constant="25" id="JAU-Bz-XMs"/>
+                            <constraint firstItem="qW0-UC-nHm" firstAttribute="leading" secondItem="oN3-A3-QBH" secondAttribute="leading" constant="20" id="Kax-II-DEz"/>
                             <constraint firstItem="GbK-Lo-OmQ" firstAttribute="top" secondItem="OLR-TW-Yr8" secondAttribute="bottom" constant="-60" id="KrZ-wK-xMd"/>
+                            <constraint firstAttribute="trailing" secondItem="fjo-HR-nBD" secondAttribute="trailing" constant="150" id="Omp-6Z-2co"/>
                             <constraint firstAttribute="trailing" secondItem="GbK-Lo-OmQ" secondAttribute="trailing" id="Une-RL-StG"/>
                             <constraint firstAttribute="trailing" secondItem="OLR-TW-Yr8" secondAttribute="trailing" id="VcP-m0-Raq"/>
+                            <constraint firstAttribute="trailing" secondItem="qW0-UC-nHm" secondAttribute="trailing" constant="20" id="WmN-dX-YGA"/>
+                            <constraint firstItem="qW0-UC-nHm" firstAttribute="top" secondItem="OLR-TW-Yr8" secondAttribute="bottom" constant="30" id="ev1-bn-y7Z"/>
                             <constraint firstItem="OLR-TW-Yr8" firstAttribute="leading" secondItem="oN3-A3-QBH" secondAttribute="leading" id="uoX-f4-fT5"/>
+                            <constraint firstItem="fjo-HR-nBD" firstAttribute="top" secondItem="qW0-UC-nHm" secondAttribute="bottom" constant="17" id="vYg-du-7dI"/>
                             <constraint firstItem="Ivg-FZ-lEW" firstAttribute="top" secondItem="GbK-Lo-OmQ" secondAttribute="bottom" id="y2p-YL-5OD"/>
                             <constraint firstItem="GbK-Lo-OmQ" firstAttribute="leading" secondItem="oN3-A3-QBH" secondAttribute="leading" id="yWz-SU-RI1"/>
                         </constraints>
@@ -599,52 +867,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UcA-al-qOs">
-                                <rect key="frame" x="28" y="112" width="318" height="513"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UcA-al-qOs">
+                                <rect key="frame" x="0.0" y="66" width="375" height="601"/>
+                                <color key="backgroundColor" red="0.6399461031" green="0.84540289639999999" blue="0.97071117159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TextCell" textLabel="yCo-yY-PCM" style="IBUITableViewCellStyleDefault" id="GFC-jw-Ato">
-                                        <rect key="frame" x="0.0" y="28" width="318" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GFC-jw-Ato" id="zuw-e9-TwZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="318" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yCo-yY-PCM">
-                                                    <rect key="frame" x="15" y="0.0" width="288" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="backgroundColor" red="0.6399461031" green="0.84540289639999999" blue="0.97071117159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
+                                                    <color key="textColor" red="0.31498441700000002" green="0.32128410530000001" blue="0.32128410530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="highlightedColor" red="0.31498441700000002" green="0.32128410530000001" blue="0.32128410530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.6399461031" green="0.84540289639999999" blue="0.97071117159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="lNH-Wg-BYF" kind="presentation" id="Mju-q1-NZj"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHf-uc-xoh">
-                                <rect key="frame" x="28" y="63" width="62" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXi-aR-oqN">
+                                <rect key="frame" x="16" y="20" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Retour" backgroundImage="orange-rectangle-image293">
-                                    <color key="titleColor" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="FV2-EK-tJL" kind="show" id="cBy-q9-6R7"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="UcA-al-qOs" secondAttribute="trailing" id="iNc-80-WoN"/>
+                            <constraint firstItem="UcA-al-qOs" firstAttribute="leading" secondItem="4B8-SH-ULN" secondAttribute="leading" id="oGV-8h-Fhc"/>
+                            <constraint firstItem="C2F-94-JVX" firstAttribute="top" secondItem="UcA-al-qOs" secondAttribute="bottom" id="psE-va-aBF"/>
+                            <constraint firstItem="UcA-al-qOs" firstAttribute="top" secondItem="FeC-0q-MdC" secondAttribute="bottom" id="s95-K7-eGe"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="w9m-Re-H5W"/>
+                    <navigationItem key="navigationItem" id="4FL-ok-BeH">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="unB-aF-no0">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zJ5-hM-pPU">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Retour" backgroundImage="orange-rectangle-image293">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="UcA-al-qOs" id="hsd-aK-yg0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X0X-zA-K3Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationItem id="qnQ-ja-b90">
+                    <barButtonItem key="leftBarButtonItem" style="plain" id="f0G-kG-TAy">
+                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="E7Q-9S-EaW">
+                            <rect key="frame" x="16" y="7" width="83" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Retour" backgroundImage="orange-rectangle-image293">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </barButtonItem>
+                </navigationItem>
             </objects>
             <point key="canvasLocation" x="1869.5999999999999" y="842.42878560719646"/>
         </scene>
@@ -663,32 +956,32 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="liner-75-100-uni-piscines-hors-sol" translatesAutoresizingMaskIntoConstraints="NO" id="28W-uh-SWA">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F27-0f-FLp">
-                                <rect key="frame" x="16" y="28" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Retour"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F27-0f-FLp">
+                                <rect key="frame" x="16" y="28" width="63" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UC3-Ic-gcM"/>
+                                    <constraint firstAttribute="width" constant="60" id="jQ4-q3-chm"/>
+                                </constraints>
+                                <state key="normal" title="Retour" backgroundImage="orange-rectangle-image293">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="kYa-gX-pmP" kind="presentation" id="dJK-xV-NV2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="blabla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7X-42-t1K">
-                                <rect key="frame" x="162" y="52" width="51" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jBz-Qm-Dgo" firstAttribute="top" secondItem="28W-uh-SWA" secondAttribute="bottom" id="3Ws-NA-Y7H"/>
                             <constraint firstItem="28W-uh-SWA" firstAttribute="top" secondItem="Ihr-Zt-ZS8" secondAttribute="top" id="67r-mY-d6A"/>
+                            <constraint firstItem="F27-0f-FLp" firstAttribute="leading" secondItem="Ihr-Zt-ZS8" secondAttribute="leading" constant="20" id="9wv-08-7R3"/>
                             <constraint firstItem="28W-uh-SWA" firstAttribute="leading" secondItem="Ihr-Zt-ZS8" secondAttribute="leading" id="Bhi-Hc-chq"/>
                             <constraint firstAttribute="trailing" secondItem="28W-uh-SWA" secondAttribute="trailing" id="HIG-mv-ivk"/>
                             <constraint firstAttribute="trailing" secondItem="28W-uh-SWA" secondAttribute="trailing" id="ORO-rK-O4g"/>
                             <constraint firstItem="28W-uh-SWA" firstAttribute="leading" secondItem="Ihr-Zt-ZS8" secondAttribute="leading" id="TXn-pe-Rrd"/>
                             <constraint firstItem="28W-uh-SWA" firstAttribute="top" secondItem="Ihr-Zt-ZS8" secondAttribute="top" id="ZqU-1W-QWJ"/>
                             <constraint firstItem="jBz-Qm-Dgo" firstAttribute="top" secondItem="28W-uh-SWA" secondAttribute="bottom" id="fKa-oI-3Bu"/>
+                            <constraint firstItem="28W-uh-SWA" firstAttribute="top" secondItem="F27-0f-FLp" secondAttribute="bottom" constant="-58" id="gXc-3e-mDo"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -771,6 +1064,7 @@
     </scenes>
     <resources>
         <image name="liner-75-100-uni-piscines-hors-sol" width="600" height="600"/>
+        <image name="orange-gecko-hi" width="600" height="513"/>
         <image name="orange-rectangle-image293" width="722" height="337"/>
     </resources>
     <inferredMetricsTieBreakers>
