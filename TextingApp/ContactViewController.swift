@@ -9,8 +9,8 @@
 import UIKit
 
 class ContactViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-
+    
+    
     @IBOutlet weak var tableView: UITableView!
     
     let textCellIdentifier = "TextCell"
@@ -19,13 +19,13 @@ class ContactViewController: UIViewController, UITableViewDataSource, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.delegate = self
         tableView.dataSource = self
         
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -47,15 +47,29 @@ class ContactViewController: UIViewController, UITableViewDataSource, UITableVie
         
         return cell
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func tableView(_ didSelectRowAttableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+        
+        let discussionController = DiscussionViewController()
+        discussionController.selectedName = swiftBlogs[indexPath.row]
+        discussionController.delegate = self
+        navigationController?.pushViewController(discussionController, animated: true)
     }
-    */
-
+    
+    func updatedSelectedName(newName: String) {
+        print(newName)
+    }
+    
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+<<<<<<< HEAD
+# platform :ios, '9.0'
+=======
+platform :ios, '10.0'
+>>>>>>> mambot
+
+target 'TextingApp' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for TextingApp
+<<<<<<< HEAD
+pod "JSQMessagesViewController"
+
+  target 'TextingAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'TextingAppUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+=======
+  pod 'Alamofire', '~> 4.4'
+  
+>>>>>>> mambot
+
+end

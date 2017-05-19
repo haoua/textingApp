@@ -28,7 +28,8 @@ class DeconnexionViewController: UIViewController {
         let decoAlert = UIAlertController(title: "Déconnexion", message: "Voulez-vous vraiment quitter l'application ?", preferredStyle: UIAlertControllerStyle.alert)
         
         decoAlert.addAction(UIAlertAction(title: "Quitter", style: .default, handler: { (action: UIAlertAction!) in
-            exit(0);
+            let ViewController = self.storyboard?.instantiateViewController(withIdentifier: "Login") as! ViewController
+            self.navigationController?.present(ViewController, animated: true)
         }))
         
         decoAlert.addAction(UIAlertAction(title: "Annuler", style: .cancel, handler: { (action: UIAlertAction!) in

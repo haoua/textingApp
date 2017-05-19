@@ -7,29 +7,201 @@
 //
 
 import UIKit
+import Alamofire
+import Foundation
 
 class ViewController: UIViewController {
-
+    
+    var configUser:ConfigUser = ConfigUser.shared
+    
+    var contactsList:ContactsList = ContactsList.shared
+    
+    let defaults = UserDefaults.standard
+    
+    
     //Variables
     @IBOutlet weak var textIdentifiant: UITextField!
+    @IBOutlet weak var textPassword: UITextField!
     @IBOutlet weak var btnConnection: UIButton!
     @IBOutlet weak var btnInscription: UIButton!
-    @IBOutlet weak var textPassword: UITextField!
+    @IBOutlet weak var textStoredUid: UITextField!
+    @IBOutlet weak var msgTextInfo: UITextField!
+    
+    
+    func auth (auth: String, msg: String) -> Void {
+        
+        if(auth == "no"){
+            
+            self.msgTextInfo.text = msg
+            
+            //Store
+            self.defaults.set("", forKey: "token")
+            self.defaults.set("", forKey: "auth")
+            self.defaults.synchronize()
+        }else{
+            
+            self.msgTextInfo.text = msg
+            
+        }
+        
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated) // No need for semicolon
+        
+        if let uid = defaults.string(forKey: "uid"){
+            print(uid)
+            self.textIdentifiant.text = uid
+            self.textStoredUid.text = uid
+        }else{
+            self.textIdentifiant.text = ""
+            self.textStoredUid.text = ""
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        configureCustomTextField()    }
-
+        if let uid = defaults.string(forKey: "uid"){
+            print(uid)
+            self.textIdentifiant.text = uid
+            
+        }else{
+            self.textIdentifiant.text = ""
+        }
+        
+        configureCustomTextField()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     
     @IBAction func btnConnexion(_ sender: UIButton) {
-        textPasswordError()
+        
+        if((self.textPassword.text) != nil && (self.textIdentifiant.text) != nil ){
+            
+            let parameters: Parameters = ["password": self.textPassword.text ?? " ",
+                                          "uid": self.textIdentifiant.text ?? " "
+            ]
+            
+            Alamofire.request(CommunUrlApi.Global.urlPostUsersLogin, method: .post, parameters: parameters).responseJSON { response in
+                
+                //print(response.request ?? "")  // original URL request
+                //print(response.response ?? "") // HTTP URL response
+                //print(response.data ?? "")     // server data
+                //print(response.result)   // result of response serialization
+                
+                //print(response)
+                
+                if let result = response.result.value {
+                    let JSON = result as! NSDictionary
+                    
+                    let auth:String = (JSON.object(forKey: "auth") as! String)
+                    let msg:String = JSON.object(forKey: "msg") as! String
+                    
+                    
+                    
+                    
+                    //print("***")
+                    //print(auth )
+                    //print("***")
+                    
+                    // Store
+                    self.defaults.set(auth, forKey: auth )
+                    self.defaults.synchronize()
+                    
+                    if let responseStatus = response.response?.statusCode {
+                        if responseStatus != 200 {
+                            // error
+                            self.auth(auth: auth, msg: msg)
+                            
+                        } else {
+                            var allCookies: [HTTPCookie]?
+                            if let headerFields = response.response?.allHeaderFields as? [String: String],
+                                let URL = response.request?.url {
+                                allCookies = HTTPCookie.cookies(withResponseHeaderFields: headerFields, for: URL)
+                                for cookie in allCookies! {
+                                    print(cookie)
+                                    let name = cookie.name
+                                    if name == "access_token" {
+                                        let value = cookie.value
+                                        
+                                        self.auth(auth: auth, msg: msg)
+                                        
+                                        // Store
+                                        self.defaults.set(value, forKey: "token")
+                                        self.defaults.set(auth, forKey: "auth")
+                                        self.defaults.synchronize()
+                                        
+                                        
+                                        let contactsList:[[String:Any]] = JSON.object(forKey: "contacts") as! [[String : Any]]
+                                        print(contactsList);
+                                        //Récupération des contacts de l'utilisateur
+                                        for contact:[String:Any] in contactsList {
+                                            
+                                            print(contact)
+                                            
+                                            
+                                            if let uid = contact["uid"] as? String {
+                                                self.contactsList.contacts.append(Contact(uid: uid))
+                                                
+                                            }
+                                            
+                                            
+                                            
+                                            
+                                            
+                                        }
+                                        
+                                        
+                                        
+                                        print(value)
+                                        
+                                        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                                        
+                                        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "homeContacts") as! ThreeViewController
+                                        self.present(nextViewController, animated:true, completion:nil)
+                                        
+                                    }else{
+                                        
+                                        self.auth(auth: auth, msg: msg)
+                                        //self.defaults.set("", forKey: "token")
+                                        //self.defaults.set("", forKey: "auth")
+                                        //self.defaults.synchronize()
+                                    }
+                                }
+                                
+                            }else{
+                                
+                                self.auth(auth: auth, msg: msg)
+                                
+                                //self.defaults.set("", forKey: "token")
+                                //self.defaults.set("", forKey: "auth")
+                                //self.defaults.synchronize()
+                            }
+                            
+                        }
+                    }
+                    
+                    
+                }else{
+                    
+                    
+                    self.defaults.set("", forKey: "token")
+                    self.defaults.set("", forKey: "auth")
+                    self.defaults.synchronize()
+                }
+            }
+            
+        }else{
+            print("Vous devez taper votre mot de passe !");
+            
+        }
     }
     
     func configureCustomTextField() {
