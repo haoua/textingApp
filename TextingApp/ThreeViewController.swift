@@ -17,16 +17,22 @@ class ThreeViewController: UIViewController {
     var token:String = ""
     var myUid = "";
     
+    var contactsList:ContactsList = ContactsList.shared
     
     @IBOutlet weak var inputSearchUid: UITextField!
     @IBOutlet weak var msgTextInfo: UITextField!
-    
+    @IBOutlet weak var inputAddPseudo: UITextField!
+    @IBOutlet weak var showAddForm: UIView!
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated) // No need for semicolon
         
-        self.inputSearchUid.text = "718ece65-ab5b-45f2-aa2c-3265e3beebc3"
+        let displayAddForm = UserDefaults.standard.bool(forKey: "showAddForm")
+        self.showAddForm.isHidden = (displayAddForm == false)
+        
+        
+        self.inputSearchUid.text = "46bad495-4f55-44d2-aa01-1793ae36df4f"
         
         if let token = defaults.string(forKey: "token"){
             print(token)
@@ -59,16 +65,13 @@ class ThreeViewController: UIViewController {
 
     @IBAction func searchBtn(_ sender: Any) {
         
-        print(CommunUrlApi.Global.urlPostFindContact)
-        
-        
         if(self.token != "" && self.inputSearchUid.text != nil && (self.inputSearchUid.text != self.myUid) ){
             
             let uid = self.inputSearchUid.text
             let headers: HTTPHeaders = ["x-access-token": self.token]
             let parameters: Parameters = ["uid": uid!]
             
-            Alamofire.request("http://192.168.1.138:3000/contacts/find/contact", method: .post, parameters: parameters, headers: headers).responseJSON { response in
+            Alamofire.request(CommunUrlApi.Global.urlPostFindContact, method: .post, parameters: parameters, headers: headers).responseJSON { response in
                 
                 print(response.request ?? "")  // original URL request
                 print(response.response ?? "") // HTTP URL response
@@ -91,7 +94,7 @@ class ThreeViewController: UIViewController {
                             
                         } else {
                             // Afficher le form pour ajouter le contact
-                            
+                            self.showAddForm.isHidden = false
                         }
                     }
                     
@@ -108,6 +111,62 @@ class ThreeViewController: UIViewController {
         
     }
     
+    @IBAction func addContactBtn(_ sender: UIButton) {
+        print("click add")
+        
+        if(self.token != "" && self.inputSearchUid.text != nil){
+            
+            let uid = self.inputSearchUid.text
+            //let pseudo = self.inputAddPseudo.text
+            let headers: HTTPHeaders = ["x-access-token": self.token]
+            let parameters: Parameters = ["uid": uid!]
+            
+            Alamofire.request(CommunUrlApi.Global.urlPostAddContact, method: .post, parameters: parameters, headers: headers).responseJSON { response in
+                
+                print(response.request ?? "")  // original URL request
+                print(response.response ?? "") // HTTP URL response
+                print(response.data ?? "")     // server data
+                print(response.result)   // result of response serialization
+                
+                print(response)
+                
+                if let result = response.result.value {
+                    let JSON = result as! NSDictionary
+                    
+                    //let uid:String = (JSON.object(forKey: "uid") as! String)
+                    let msg:String = JSON.object(forKey: "msg") as! String
+                    self.msgTextInfo.text = msg
+                    
+                    if let responseStatus = response.response?.statusCode {
+                        if responseStatus != 200 {
+                            // error
+                            
+                        } else {
+                            // Afficher le form pour ajouter le contact
+                            let error:String = JSON.object(forKey: "error") as! String
+                            let add:String = JSON.object(forKey: "add") as! String
+                            
+                            if(error == "false" && add == "true"){
+                                
+                                //self.contactsList.contacts.append(Contact(uid: uid!, pseudo: pseudo!, publicKey: "publicKeyUser"))
+                                self.contactsList.contacts.append(Contact(uid: uid!))
+
+                            }else{
+                                
+                            }
+                        }
+                    }
+                }else{
+                    
+                }
+            }
+            
+        }else{
+            self.msgTextInfo.text = ""
+            
+        }
+        
+    }
     
     
     /*

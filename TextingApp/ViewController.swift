@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     
     var configUser:ConfigUser = ConfigUser.shared
     
+    var contactsList:ContactsList = ContactsList.shared
+    
     let defaults = UserDefaults.standard
     
     
@@ -89,22 +91,25 @@ class ViewController: UIViewController {
             
             Alamofire.request(CommunUrlApi.Global.urlPostUsersLogin, method: .post, parameters: parameters).responseJSON { response in
                 
-                print(response.request ?? "")  // original URL request
-                print(response.response ?? "") // HTTP URL response
-                print(response.data ?? "")     // server data
-                print(response.result)   // result of response serialization
+                //print(response.request ?? "")  // original URL request
+                //print(response.response ?? "") // HTTP URL response
+                //print(response.data ?? "")     // server data
+                //print(response.result)   // result of response serialization
                 
-                print(response)
+                //print(response)
                 
                 if let result = response.result.value {
                     let JSON = result as! NSDictionary
                     
                     let auth:String = (JSON.object(forKey: "auth") as! String)
                     let msg:String = JSON.object(forKey: "msg") as! String
+                   
                     
-                    print("***")
-                    print(auth )
-                    print("***")
+                    
+                    
+                    //print("***")
+                    //print(auth )
+                    //print("***")
                     
                     // Store
                     self.defaults.set(auth, forKey: auth )
@@ -127,10 +132,33 @@ class ViewController: UIViewController {
                                         let value = cookie.value
                                         
                                         self.auth(auth: auth, msg: msg)
+                                        
                                         // Store
                                         self.defaults.set(value, forKey: "token")
                                         self.defaults.set(auth, forKey: "auth")
                                         self.defaults.synchronize()
+                                        
+                                        
+                                        let contactsList:[[String:Any]] = JSON.object(forKey: "contacts") as! [[String : Any]]
+                                        print(contactsList);
+                                        //Récupération des contacts de l'utilisateur
+                                        for contact:[String:Any] in contactsList {
+                                            
+                                            print(contact)
+                                            
+                                            
+                                            if let uid = contact["uid"] as? String {
+                                                self.contactsList.contacts.append(Contact(uid: uid))
+
+                                            }
+
+                                            
+                                            
+                                            
+                                            
+                                        }
+                                        
+                                        
                                         
                                         print(value)
                                         
