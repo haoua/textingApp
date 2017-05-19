@@ -21,19 +21,19 @@ struct User {
 
 class DiscussionViewController: JSQMessagesViewController {
     
-    var selectedName: String!
+    var selectedName:String! = nil
     weak var delegate:ContactViewController? = nil
-
+    
     let user1 = User(id: "1", name: "Awa")
     //let user2 = User(id: "2", name: selectedName)
     
     var currentUser: User {
-    return user1
+        return user1
     }
     
     //all messages of users1, users2
     var messages = [JSQMessage]()
-
+    
 }
 
 extension DiscussionViewController {
@@ -87,7 +87,7 @@ extension DiscussionViewController {
 
 extension DiscussionViewController{
     override func viewDidLoad() {
-    
+        
         super.viewDidLoad()
         
         self.senderId = currentUser.id
@@ -100,22 +100,19 @@ extension DiscussionViewController{
 
 extension DiscussionViewController {
     func getMessages() -> [JSQMessage]{
-    var messages = [JSQMessage]()
+        var messages = [JSQMessage]()
+    
         
-    //let message1 = JSQMessage(senderId: "1", displayName: "Awa", text: "Hey dude")
-    let message2 = JSQMessage(senderId: "2", displayName: selectedName, text: "Yoh man")
+        //let message1 = JSQMessage(senderId: "1", displayName: "Awa", text: "Hey dude")
+        let message2 = JSQMessage(senderId: "2", displayName: selectedName , text: "Yoh man")
         
-    //messages.append(message1!)
-    messages.append(message2!)
+        //messages.append(message1!)
+        messages.append(message2!)
         
         
-    self.delegate?.updatedSelectedName(newName: selectedName)
+        self.delegate?.updatedSelectedName(newName: selectedName)
         
-    return messages
+        return messages
     }
-    
-
-    
-
     
 }
